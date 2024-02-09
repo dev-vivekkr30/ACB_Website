@@ -313,6 +313,11 @@ a{
     padding: 8px;
 }
 
+
+.stats-section .card:hover{
+    box-shadow: 4px 4px 32px rgba(0, 0, 0, 0.084);
+}
+
 .stats-section .card .card-body h1{
     font-size: 42px;
     font-weight: 600;
@@ -323,4 +328,133 @@ a{
     color: var(--black-color);
     font-size: 14px;
     margin: 0;
+}
+
+/* Head Office Section */
+
+.head-office-section .card{
+    border-radius: 24px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.head-office-section .card .overlay{
+    position: absolute;
+    opacity: 0.5;
+    width: 100%;
+    padding: 0;
+    border-radius: 24px;
+    height: 100%;
+    transition: opacity 0.6s;
+}
+
+.head-office-section .card:hover .overlay{
+    opacity: 0.8;
+}
+
+.head-office-section .card .card-body{
+    margin: 64px 28px;
+    z-index: 2;
+    color: var(--white-color);
+}
+
+.head-office-section .card .card-body h2{
+    color: var(--white-color);
+}
+
+.head-office-section .row .col-md-3:nth-child(1) .card{
+    background-image: url('/images/mumbai.jpg');
+}
+
+.head-office-section .row .col-md-3:nth-child(2) .card{
+    background-image: url('/images/thane.jpg');
+}
+
+.head-office-section .row .col-md-3:nth-child(3) .card{
+    background-image: url('/images/pune.jpg');
+}
+
+.head-office-section .row .col-md-3:nth-child(4) .card{
+    background-image: url('/images/nashik.jpg');
+}
+
+.head-office-section .row:nth-child(2) .col-md-3:nth-child(5) .card{
+    background-image: url('/images/amravati.jpg');
+}
+
+.head-office-section .row .col-md-3:nth-child(6) .card{
+    background-image: url('/images/aurangabad.jpg');
+}
+
+.head-office-section .row .col-md-3:nth-child(7) .card{
+    background-image: url('/images/nanded.jpg');
+}
+
+.head-office-section .row .col-md-3:nth-child(8) .card{
+    background-image: url('/images/nagpur.jpg');
+}
+
+.head-office-section .row .col-md-3:nth-child(1) .card .overlay{
+    background-color: #05411F;
+}
+
+.head-office-section .row .col-md-3:nth-child(2) .card .overlay{
+    background-color: #A18700;
+}
+
+.head-office-section .row .col-md-3:nth-child(3) .card .overlay{
+    background-color: #00234B;
+}
+
+.head-office-section .row .col-md-3:nth-child(4) .card .overlay{
+    background-color: #A10909;
+}
+
+.head-office-section .row .col-md-3:nth-child(5) .card .overlay{
+    background-color: #270362;
+}
+.head-office-section .row .col-md-3:nth-child(6) .card .overlay{
+    background-color: #023027;
+}
+.head-office-section .row .col-md-3:nth-child(7) .card .overlay{
+    background-color: #017B72;
+}
+.head-office-section .row .col-md-3:nth-child(8) .card .overlay{
+    background-color: #649301;
+}
+
+/* footer section */
+
+footer{
+    background-image: url('/images/footer-bg.jpg');
+    overflow: hidden;
+}
+
+footer .footer-link-section .link-title{
+    color: var(--white-color);
+    padding-bottom: 4px;
+    font-size: 14px;
+    border-bottom: 1px solid var(--white-color);
+}
+
+footer .footer-link-section, footer .footer-address{
+    border-bottom: 1px solid #353535;
+}
+footer .footer-link-section ul{
+    padding: 0;
+}
+footer .footer-link-section .footer-link {
+    color: var(--white-color);
+    padding-bottom: 4px;
+    font-size: 14px;
+    list-style: none;
+}
+
+footer .footer-address p{
+    color: var(--white-color);
+}
+
+footer .footer-copyright p{
+    color: var(--white-color);
 }
