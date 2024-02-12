@@ -198,14 +198,14 @@
                 <div class="mb-4">
                     <h4 class="m-2">Details Of the Public Servant</h4>
                     <div class="row align-items-center mb-3">
-                        <div class="col-md-6 mb-3">
-                            <div>
+                        <div class="col-md-6">
+                            <div class="mb-3">
                                 <input type="text" class="form-control form-control-lg rounded-pill"
                                     placeholder="Enter Name" id="FormControlName" required>
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div>
+                            <div class="mb-3">
                                 <input type="text" class="form-control form-control-lg rounded-pill"
                                     placeholder="Department" id="FormControlName" required>
                             </div>
@@ -213,30 +213,9 @@
                     </div>
 
                     <div class="row align-items-center mb-3">
-                        <div class="col-md-12">
-                            <div>
-                                <input type="text" class="form-control form-control-lg rounded-pill"
-                                    placeholder="Work Pending" id="FormControlName" required>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="row align-items-center mb-3">
-                        <div class="col-md-12">
-                            <div>
-                                <input type="text" class="form-control form-control-lg rounded-pill"
-                                    placeholder="Bride Demanded" id="FormControlName" required>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="mb-4">
-                    <div class="row align-items-center mb-3">
                         <div class="col-md-6">
                             <div class="mb-3">
-                                <label for="InputUnitoffice" class="form-label text-muted m-2">Select Your district</label>
                                 <select class="form-select form-control-lg rounded-pill" aria-label="Default select">
                                     <option value="Thane" selected>Select district</option>
                                     <option value="Thane">Thane</option>
@@ -277,23 +256,59 @@
                                 </select>
                             </div>
                         </div>
+
                         <div class="col-md-6">
                             <div class="mb-3">
-                                <label for="InputUnitoffice" class="form-label text-muted m-2">Attach evidence Video / Audio / Images</label>
-                                <div class="input-group mb-3">
-                                    <input type="file" class="form-control rounded-pill" id="inputGroupFile02">
-                                  </div>
+                                <input type="text" class="form-control form-control-lg rounded-pill"
+                                    placeholder="Bride Demanded" id="FormControlName" required>
                             </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="row align-items-center mb-3">
+                        <div class="col-md-12">
+                            <div>
+                                <div class="form-floating">
+                                    <textarea class="form-control rounded" placeholder="Leave a comment here"
+                                        id="floatingTextarea2"
+                                        style="height: 100px; border-radius: 12px !important;"></textarea>
+                                    <label for="floatingTextarea2">Wrok Pending</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+                <div class="mb-4">
+                    <div class="row align-items-center mb-3">
+                        <div class="col-md-12">
+                            <div class="mb-3">
+                                <label for="InputUnitoffice" class="form-label text-muted m-2">Attach evidence Video /
+                                    Audio / Images</label>
+                                <div id="fileUploadContainer">
+                                    <div class="file-upload">
+                                        <input type="file" id="fileInput1" class="file-input"
+                                            onchange="showFileName('fileInput1')">
+                                        <label for="fileInput1" class="me-2">Upload File <span><img
+                                                    src="images/Upload.svg" alt=""></span></label>
+                                        <span id="fileName1" class="file-name"></span>
+                                    </div>
+                                </div>
+                                <button class="btn add-more-btn" onclick="addFileInput()">+ Add File Input</button>
+                            </div>
+
                         </div>
                     </div>
                 </div>
 
                 <div class="row align-items-center mt-4">
-                    <div class="col-md-9">
+                    <div class="col-md-12">
                         <button class="btn default-btn w-100"><b>Submit Complaint</b></button>
-                    </div>
-                    <div class="col-md-3">
-                        <button class="btn btn-primary add-more-btn rounded-pill w-100 p-2">+ Add More</button>
                     </div>
                 </div>
 

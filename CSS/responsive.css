@@ -86,8 +86,10 @@
     .top-navbar {
         height: auto;
     }
+
     .top-navbar .top-bar .top-link-search .input-group {
-        width: 212px;}
+        width: 212px;
+    }
 
     .navbar>.container-fluid {
         display: block;
@@ -110,7 +112,7 @@
 
     .float-cta-btn {
         margin: 8px 0px 8px 8px;
-    }    
+    }
 
     .call-btn {
         top: 248px;
@@ -125,20 +127,22 @@
         padding: 8px 16px !important;
     }
 
-    .top-navbar .navbar .navbar-nav .nav-item .nav-link{
+    .top-navbar .navbar .navbar-nav .nav-item .nav-link {
         font-size: 16px;
     }
 
-    .cta-lists, .latest-update-list{
+    .cta-lists,
+    .latest-update-list {
         width: 100%;
         padding: 0 !important;
         margin-top: 24px;
     }
-    .dm-message{
+
+    .dm-message {
         padding: 32px;
     }
 
-    .dm-message .message{
+    .dm-message .message {
         max-width: 85%;
     }
 
@@ -152,30 +156,34 @@
         margin: 12px;
     }
 
-    .stats-section  .col-md-12{
+    .stats-section .col-md-12 {
         flex-flow: wrap;
     }
 
     .head-office-section .card .card-body {
         margin: 24px 12px;
     }
-    
-    .head-office-section .card .card-body h2{
+
+    .head-office-section .card .card-body h2 {
         font-size: 16px;
     }
-    .head-office-section .card .card-body ul{
+
+    .head-office-section .card .card-body ul {
         padding-left: 16px;
     }
-    .head-office-section .card .card-body ul li{
+
+    .head-office-section .card .card-body ul li {
         font-size: 12px;
 
     }
 
-    footer .footer-link-section .link-title,footer .footer-link-section .footer-link {
+    footer .footer-link-section .link-title,
+    footer .footer-link-section .footer-link {
         font-size: 11px;
     }
-    
-    footer .footer-address p, footer .footer-copyright p{
+
+    footer .footer-address p,
+    footer .footer-copyright p {
         font-size: 12px;
     }
 
@@ -184,16 +192,17 @@
     .top-bar-links {
         font-size: 10px;
     }
+
     .top-navbar .top-bar .top-link-search .input-group {
         width: 180px;
     }
 
-    .owl-carousel .owl-item{
+    .owl-carousel .owl-item {
         display: flex;
         justify-content: center;
     }
 
-    .owl-carousel .owl-item img{
+    .owl-carousel .owl-item img {
         width: 100% !important;
     }
 
@@ -203,7 +212,7 @@
 }
 
 @media only screen and (max-width:480px) {
-    .top-call-info{
+    .top-call-info {
         display: none !important;
     }
 
@@ -216,7 +225,7 @@
         padding-left: 8px;
     }
 
-    .top-navbar .navbar .nav-right{
+    .top-navbar .navbar .nav-right {
         border-top: 1px solid var(--gray-color);
         padding-top: 8px;
     }
@@ -224,7 +233,8 @@
     .float-cta-btn {
         margin: 4px 0px 4px 4px;
     }
-    .float-cta-btn img{
+
+    .float-cta-btn img {
         max-width: 24px;
     }
 
@@ -239,29 +249,31 @@
     .mail-btn {
         top: 270px;
     }
+
     .headline {
         width: 100%;
         height: 35px;
         background-color: var(--primary-color);
     }
-    
 
-    .cta-latest-section{
+
+    .cta-latest-section {
         padding-left: 24px;
         padding-right: 24px;
     }
 
-    .dm-message{
+    .dm-message {
         margin: auto 12px;
     }
 
-    .stats{
+    .stats {
         padding: 0px 16px;
     }
 
     .stats-section .card {
         width: 100% !important;
     }
+
     /* .stats-section .last-card{
         width: 100% !important;
     } */
@@ -270,7 +282,7 @@
         font-size: 18px;
     }
 
-    .head-office-section{
+    .head-office-section {
         padding: 0px 16px;
     }
 
@@ -278,20 +290,23 @@
         padding: 0px 6px;
     }
 
-    .headline .headline-title h3{
+    .headline .headline-title h3 {
         font-size: 14px;
     }
-    .headline .headline-marquee p{
+
+    .headline .headline-marquee p {
         font-size: 14px;
     }
+
     .dm-message .message {
         max-width: 90% !important;
     }
+
     .head-office-section .card .card-body ul li {
         font-size: 14px;
     }
 
-    .head-office-section .card{
+    .head-office-section .card {
         width: 212px !important;
     }
 
@@ -300,23 +315,26 @@
         padding: 0;
     }
 
-    .stats h1, .head-office-section h1{
+    .stats h1,
+    .head-office-section h1 {
         font-size: 24px;
     }
 
-    .offcanvas{
+    .offcanvas {
         width: 80%;
-    } 
+    }
 
-    footer .footer-link-section .link-title{
+    footer .footer-link-section .link-title {
         font-size: 16px;
     }
-    
-    footer .footer-address p, footer .footer-copyright p, footer .footer-link-section .footer-link{
+
+    footer .footer-address p,
+    footer .footer-copyright p,
+    footer .footer-link-section .footer-link {
         font-size: 14px;
     }
 
-    .nav-embalem{
+    .nav-embalem {
         margin: 0;
     }
 
@@ -324,7 +342,7 @@
         bottom: 68px !important;
     }
 
-    .add-more-btn{
+    .add-more-btn {
         margin-top: 16px;
     }
 }
