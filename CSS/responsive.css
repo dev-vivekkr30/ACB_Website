@@ -308,11 +308,11 @@
         width: 80%;
     } 
 
-    footer .footer-link-section .link-title,footer .footer-link-section .footer-link {
+    footer .footer-link-section .link-title{
         font-size: 16px;
     }
     
-    footer .footer-address p, footer .footer-copyright p{
+    footer .footer-address p, footer .footer-copyright p, footer .footer-link-section .footer-link{
         font-size: 14px;
     }
 

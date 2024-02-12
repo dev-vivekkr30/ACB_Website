@@ -535,7 +535,7 @@ footer .footer-link-section ul {
 footer .footer-link-section .footer-link {
     color: var(--white-color);
     padding-bottom: 4px;
-    font-size: 14px;
+    font-size: 12px;
     list-style: none;
 }
 
@@ -589,7 +589,6 @@ footer .footer-copyright p {
 .pagination>li>span {
     border-radius: 50% !important;
     margin: 5px 5px;
-
     width: 36px;
     height: 36px;
 }
