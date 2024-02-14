@@ -26,6 +26,57 @@
 </head>
 
 <body>
+    <div class="top-bar-mob d-flex justify-content-between align-items-center">
+        <div class="input-group">
+            <input type="text" class="form-control top-search-bar" placeholder="Search here..."
+                aria-label="Recipient's username" aria-describedby="button-addon2">
+        </div>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+            aria-controls="offcanvasExample"><span class="navbar-toggler-icon"><img src="images/menu-bars.svg" alt=""
+                    srcset=""></span>
+        </button>
+
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Press Release</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Statistics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">DG′s Message</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="fir.html">FIRs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="legal.html">Legal</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+
     <div class="container-fluid p-0">
         <!-- Navigation Bar Started -->
         <div class="top-navbar">
@@ -72,48 +123,6 @@
                         <img src="images/logo.svg" alt="" srcset="">
                     </a>
                     <div class="nav-right">
-                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                            data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-                            <span class="navbar-toggler-icon"><img src="images/menu-bars.svg" alt="" srcset=""></span>
-                        </button>
-
-                        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
-                            aria-labelledby="offcanvasExampleLabel">
-                            <div class="offcanvas-header">
-                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="offcanvas-body">
-                                <ul class="navbar-nav">
-                                    <li class="nav-item">
-                                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Press Release</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Events</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Statistics</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">DG′s Message</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">About Us</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="fir.html">FIRs</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="legal.html">Legal</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
-
                         <!-- Nav Options -->
                         <div class="collapse navbar-collapse flex-row-reverse" id="navbarNav">
                             <ul class="navbar-nav">
@@ -154,24 +163,26 @@
 
         <!-- Floating Buttons Starts-->
 
-        <a href="#">
-            <div class="float-cta-btn whatsapp-btn">
-                <img class="" src="images/whatsapp-btn.svg" alt="whatsapp-btn" srcset="">
-                <span class="content">9930997700</span>
-            </div>
-        </a>
-        <a href="#">
-            <div class="float-cta-btn call-btn">
-                <img class="" src="images/call-btn.svg" alt="whatsapp-btn" srcset="">
-                <span class="content">+91 22-249-21212</span>
-            </div>
-        </a>
-        <a href="#">
-            <div class="float-cta-btn mail-btn">
-                <img class="" src="images/mail-btn.svg" alt="whatsapp-btn" srcset="">
-                <span class="content">acbwebmail@mahapolice.gov.in</span>
-            </div>
-        </a>
+        <div class="float-btn">
+            <a href="#">
+                <div class="float-cta-btn whatsapp-btn">
+                    <img class="" src="images/whatsapp-btn.svg" alt="whatsapp-btn" srcset="">
+                    <span class="content">9930997700</span>
+                </div>
+            </a>
+            <a href="#">
+                <div class="float-cta-btn call-btn">
+                    <img class="" src="images/call-btn.svg" alt="whatsapp-btn" srcset="">
+                    <span class="content">+91 22-249-21212</span>
+                </div>
+            </a>
+            <a href="#">
+                <div class="float-cta-btn mail-btn">
+                    <img class="" src="images/mail-btn.svg" alt="whatsapp-btn" srcset="">
+                    <span class="content">acbwebmail@mahapolice.gov.in</span>
+                </div>
+            </a>
+        </div>
         <!-- Floating CTA Buttons ends -->
 
         <!-- Banner Carousel -->
@@ -264,6 +275,20 @@
 
                     <div class="col-md-6">
                         <div class="card mb-4">
+                            <div class="card-body ">
+                                <h3 class="card-title align-items-center"><span class="card-icon me-2"><img
+                                            src="images/fir-icon.svg" alt="fir-icon"></span>File A
+                                    Complaint Online</h3>
+                                <p class="card-text">Report ACB if any Public Servant demands bribe for Government
+                                    work.
+                                </p>
+                                <a href="#" class="card-link">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <div class="card">
                             <div class="card-body ">
                                 <h3 class="card-title align-items-center"><span class="card-icon me-2"><img
                                             src="images/fir-icon.svg" alt="fir-icon"></span>File A

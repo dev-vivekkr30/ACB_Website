@@ -118,6 +118,10 @@ a {
 
 /* Navigation-bar */
 
+.top-bar-mob{
+    display: none !important;
+}
+
 .top-navbar {
     width: 100%;
     height: 112px;
@@ -192,13 +196,23 @@ a {
     font-weight: 600 !important;
 }
 
-.top-navbar .navbar .nav-right .offcanvas .offcanvas-body .navbar-nav .nav-item .nav-link {
+.top-bar-mob .offcanvas .offcanvas-body .navbar-nav .nav-item .nav-link {
     border-bottom: 1px solid var(--gray-color);
+    color: var(--black-color);
 
 }
 
+.top-bar-mob .offcanvas .offcanvas-body .navbar-nav .nav-item .active {
+    font-weight: bold;
+
+}
+
+.float-btn{
+    display: grid;
+    
+}
 .float-cta-btn {
-    position: fixed;
+    z-index:2;
     background-color: var(--white-color);
     padding: 8px;
     margin: 16px;
@@ -213,19 +227,18 @@ a {
     font-size: 24px;
     font-weight: bold;
     margin-right: 0px;
-    position: absolute;
-    z-index: 2;
     right: 0;
 }
-
+.float-btn .whatsapp-btn{
+    position: fixed;
+    right:0;
+}
 .call-btn {
     position: fixed;
-    top: 192px;
 }
 
 .mail-btn {
     position: fixed;
-    top: 272px;
 }
 
 .float-cta-btn .content {
