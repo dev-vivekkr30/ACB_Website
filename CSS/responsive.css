@@ -246,9 +246,28 @@
     .owl-carousel .owl-nav {
         bottom: 68px !important;
     }
+
+    .complaint-form{
+        width: 100%;
+    }
+    .contact-sidebar{
+        width: 100%;
+    }
+    .contact-sidebar .contact-info-sidebar{
+        height: auto;
+    }
 }
 
 @media only screen and (max-width:480px) {
+
+    .mob-m-4{
+        margin-bottom: 1rem;
+    }
+
+    .contact-info-sidebar .sidebar-body-info .sidebar-text h2, .contact-info-sidebar .sidebar-title h2{
+        font-size: 18px;
+    }
+
     .float-cta-btn {
         margin: 4px 0px 4px 4px;
     }
@@ -316,7 +335,8 @@
     }
 
     .head-office-section {
-        padding: 0px 16px;
+        padding-left:16px;
+        padding-right:16px;
     }
 
     .headline .headline-title {
@@ -378,4 +398,19 @@
     .add-more-btn {
         margin-top: 16px;
     }
+
+    /* File Upload Btn */
+/* 
+    .fileUploadContainer .file-upload{
+        display: flex !important;
+        align-items: center;
+    }
+
+    .fileUploadContainer .file-upload .file-upload-btn{
+        display: block;
+    }
+
+    .fileUploadContainer .file-upload span{
+        font-size: 12px; white-space: nowrap; width:220px; overflow: hidden; text-overflow: ellipsis;
+    } */
 }

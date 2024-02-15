@@ -36,8 +36,34 @@ function addFileInput() {
     const container = document.getElementById('fileUploadContainer');
     const inputCount = container.querySelectorAll('.file-upload').length + 1;
 
+    // const newFileInput = document.createElement('div');
+    // newFileInput.classList.add('file-upload');
+
+    // const input = document.createElement('input');
+    // input.type = 'file';
+    // input.id = 'fileInput' + inputCount;
+    // input.classList.add('file-input');
+    // input.setAttribute('onchange', 'showFileName("fileInput' + inputCount + '")');
+
+    // const label = document.createElement('label');
+    // label.setAttribute('for', 'fileInput' + inputCount);
+    // label.innerHTML = 'Upload File <span><img src="images/Upload.svg" alt=""></span>';
+    // label.classList.add('me-2');
+
+    // const fileName = document.createElement('span');
+    // fileName.id = 'fileName' + inputCount;
+    // fileName.classList.add('file-name');
+
+    // newFileInput.appendChild(input);
+    // newFileInput.appendChild(label);
+    // newFileInput.appendChild(fileName);
+    // container.appendChild(newFileInput);
+
     const newFileInput = document.createElement('div');
     newFileInput.classList.add('file-upload');
+
+    const uploadBtn = document.createElement('div');
+    uploadBtn.classList.add('file-upload-btn');
 
     const input = document.createElement('input');
     input.type = 'file';
@@ -54,11 +80,12 @@ function addFileInput() {
     fileName.id = 'fileName' + inputCount;
     fileName.classList.add('file-name');
 
-    newFileInput.appendChild(input);
-    newFileInput.appendChild(label);
+    uploadBtn.appendChild(input);
+    uploadBtn.appendChild(label);
+    newFileInput.appendChild(uploadBtn);
     newFileInput.appendChild(fileName);
-
     container.appendChild(newFileInput);
+
 }
 
 

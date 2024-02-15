@@ -14,6 +14,12 @@
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/responsive.css">
 
+    <!-- Animate JS CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+    integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
     <!-- Owl Carousel CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
         integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
@@ -27,68 +33,68 @@
 
 <body>
     <custom-header></custom-header>
-        <!-- Floating Buttons Starts-->
+    <!-- Floating Buttons Starts-->
 
-        <div class="float-btn">
-            <a href="#">
-                <div class="float-cta-btn whatsapp-btn">
-                    <img class="" src="images/whatsapp-btn.svg" alt="whatsapp-btn" srcset="">
-                    <span class="content">9930997700</span>
-                </div>
-            </a>
-            <a href="#">
-                <div class="float-cta-btn call-btn">
-                    <img class="" src="images/call-btn.svg" alt="whatsapp-btn" srcset="">
-                    <span class="content">+91 22-249-21212</span>
-                </div>
-            </a>
-            <a href="#">
-                <div class="float-cta-btn mail-btn">
-                    <img class="" src="images/mail-btn.svg" alt="whatsapp-btn" srcset="">
-                    <span class="content">acbwebmail@mahapolice.gov.in</span>
-                </div>
-            </a>
-        </div>
-        <!-- Floating CTA Buttons ends -->
-
-        <!-- Banner Carousel -->
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="images/banner-1.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="images/banner-2.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="images/banner-3.jpg" class="d-block w-100" alt="...">
-                </div>
+    <div class="float-btn">
+        <a href="#">
+            <div class="float-cta-btn whatsapp-btn wow animate__animated animate__slideInRight">
+                <img class="" src="images/whatsapp-btn.svg" alt="whatsapp-btn" srcset="">
+                <span class="content">9930997700</span>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-        <!-- Banner Carousel Ends -->
-
-        <!-- Headline Marquee -->
-        <div class="headline d-flex justify-content-start align-items-center">
-            <div class="headline-title d-flex justify-content-start align-items-center">
-                <img src="images/headline-icon.svg" class="me-2" alt="healine-icon">
-                <h3>Headline</h3>
+        </a>
+        <a href="#">
+            <div class="float-cta-btn call-btn wow animate__animated animate__slideInRight">
+                <img class="" src="images/call-btn.svg" alt="whatsapp-btn" srcset="">
+                <span class="content">+91 22-249-21212</span>
             </div>
-            <marquee behavior="scroll" direction="left" class="headline-marquee">
-                <p>आलोसे-विस्तार अधिकारी(पं), पंचायत समिती साकोली, ता. साकोली, जि. भंडारा यांनी तक्रारदार यांनी
-                    आलोसे-विस्तार अधिकारी(पं), पंचायत समिती साकोली, ता. साकोली, जि. भंडारा यांनी तक्रारदार यांनी</p>
-            </marquee>
+        </a>
+        <a href="#">
+            <div class="float-cta-btn mail-btn wow animate__animated animate__slideInRight">
+                <img class="" src="images/mail-btn.svg" alt="whatsapp-btn" srcset="">
+                <span class="content">acbwebmail@mahapolice.gov.in</span>
+            </div>
+        </a>
+    </div>
+    <!-- Floating CTA Buttons ends -->
+
+    <!-- Banner Carousel -->
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/banner-1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="images/banner-2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="images/banner-3.jpg" class="d-block w-100" alt="...">
+            </div>
         </div>
-        <!-- Headline Marquee Ends -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- Banner Carousel Ends -->
+
+    <!-- Headline Marquee -->
+    <div class="headline d-flex justify-content-start align-items-center">
+        <div class="headline-title d-flex justify-content-start align-items-center">
+            <img src="images/headline-icon.svg" class="me-2" alt="healine-icon">
+            <h3>Headline</h3>
+        </div>
+        <marquee behavior="scroll" direction="left" class="headline-marquee">
+            <p>आलोसे-विस्तार अधिकारी(पं), पंचायत समिती साकोली, ता. साकोली, जि. भंडारा यांनी तक्रारदार यांनी
+                आलोसे-विस्तार अधिकारी(पं), पंचायत समिती साकोली, ता. साकोली, जि. भंडारा यांनी तक्रारदार यांनी</p>
+        </marquee>
+    </div>
+    <!-- Headline Marquee Ends -->
     </div>
     <!-- CTA & latest Updates -->
     <div class="container cta-latest-section">
@@ -98,7 +104,7 @@
 
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="card mb-4">
+                        <div class="card mb-4 wow animate__animated animate__fadeIn" data-wow-delay="0s">
                             <div class="card-body">
                                 <h3 class="card-title  align-items-center"><span class="card-icon me-2"><img
                                             src="images/fir-icon.svg" alt="fir-icon"></span>File A
@@ -112,7 +118,7 @@
                     </div>
 
                     <div class="col-md-6">
-                        <div class="card mb-4">
+                        <div class="card mb-4 wow animate__animated animate__fadeIn" data-wow-delay="50ms">
                             <div class="card-body">
                                 <h3 class="card-title  align-items-center"><span class="card-icon me-2"><img
                                             src="images/fir-icon.svg" alt="fir-icon"></span>File A
@@ -126,7 +132,7 @@
                     </div>
 
                     <div class="col-md-6">
-                        <div class="card mb-4">
+                        <div class="card mb-4 wow animate__animated animate__fadeIn" data-wow-delay="60ms">
                             <div class="card-body">
                                 <h3 class="card-title  align-items-center"><span class="card-icon me-2"><img
                                             src="images/fir-icon.svg" alt="fir-icon"></span>File A
@@ -140,7 +146,7 @@
                     </div>
 
                     <div class="col-md-6">
-                        <div class="card mb-4">
+                        <div class="card mb-4 wow animate__animated animate__fadeIn" data-wow-delay="70ms">
                             <div class="card-body ">
                                 <h3 class="card-title align-items-center"><span class="card-icon me-2"><img
                                             src="images/fir-icon.svg" alt="fir-icon"></span>File A
@@ -154,7 +160,7 @@
                     </div>
 
                     <div class="col-md-12">
-                        <div class="card">
+                        <div class="card wow animate__animated animate__fadeIn" data-wow-delay="80ms">
                             <div class="card-body ">
                                 <h3 class="card-title align-items-center"><span class="card-icon me-2"><img
                                             src="images/fir-icon.svg" alt="fir-icon"></span>File A
@@ -172,7 +178,7 @@
 
             <!-- Latest Update Section Start -->
             <div class="col-md-6 wrapper latest-update-list ps-4">
-                <div class="latest-update">
+                <div class="latest-update wow animate__animated animate__slideInRight">
                     <div class="latest-update-title mb-3 d-flex justify-content-start">
                         <img class="me-2" src="images/mic.svg" alt="mic-icon" srcset="">
                         <h2 class="m-0">Latest Updates</h2>
@@ -207,7 +213,7 @@
 
     <!-- DM's Message -->
     <div class="container wrapper">
-        <div class="dm-message">
+        <div class="dm-message wow animate__animated animate__fadeIn">
             <img class="message-quote" src="images/quote.svg" alt="">
             <div class="message">
                 <h1 class="message-title">DG′s Message</h1>
@@ -239,7 +245,7 @@
         <div class="stats-section row">
             <div class="col-md-12 d-flex justify-content-between">
 
-                <div class="card" style="width: 231px;">
+                <div class="card wow animate__animated animate__fadeIn" data-wow-delay="0s" style="width: 231px;">
                     <div class="card-body">
                         <div class="d-flex justify-content-start align-items-center">
                             <img src="images/trap-icon.svg" alt="trap-icon">
@@ -249,7 +255,7 @@
                     </div>
                 </div>
 
-                <div class="card" style="width: 231px;">
+                <div class="card wow animate__animated animate__fadeIn" data-wow-delay="50ms" style="width: 231px;">
                     <div class="card-body">
                         <div class="d-flex justify-content-start align-items-center">
                             <img src="images/recovery-icon.svg" alt="trap-icon">
@@ -259,7 +265,7 @@
                     </div>
                 </div>
 
-                <div class="card" style="width: 231px;">
+                <div class="card wow animate__animated animate__fadeIn" data-wow-delay="65ms" style="width: 231px;">
                     <div class="card-body">
                         <div class="d-flex justify-content-start align-items-center">
                             <img src="images/no-corruption-icon.svg" alt="trap-icon">
@@ -269,7 +275,7 @@
                     </div>
                 </div>
 
-                <div class="card" style="width: 231px;">
+                <div class="card wow animate__animated animate__fadeIn" data-wow-delay="80ms" style="width: 231px;">
                     <div class="card-body">
                         <div class="d-flex justify-content-start align-items-center">
                             <img src="images/suspended-icon.svg" alt="trap-icon">
@@ -279,7 +285,7 @@
                     </div>
                 </div>
 
-                <div class="card last-card" style="width: 231px;">
+                <div class="card last-card wow animate__animated animate__fadeIn" data-wow-delay="95ms" style="width: 231px;">
                     <div class="card-body">
                         <div class="d-flex justify-content-start align-items-center">
                             <img src="images/decrease-icon.svg" alt="trap-icon">
@@ -300,7 +306,7 @@
         <h1 class="mb-3">ACB Head Office Ranges & Units</h1>
         <div class="row">
             <div class="col-md-3 mb-4">
-                <div class="card">
+                <div class="card wow animate__animated animate__fadeIn">
                     <div class="overlay"></div>
                     <div class="card-body">
                         <h2>Mumbai</h2>
@@ -316,7 +322,7 @@
             </div>
 
             <div class="col-md-3 mb-4">
-                <div class="card" style="width: 295px;">
+                <div class="card wow animate__animated animate__fadeIn" style="width: 295px;" data-wow-delay="0s">
                     <div class="overlay"></div>
                     <div class="card-body">
                         <h2>Thane</h2>
@@ -332,7 +338,7 @@
             </div>
 
             <div class="col-md-3 mb-4">
-                <div class="card" style="width: 295px;">
+                <div class="card wow animate__animated animate__fadeIn" style="width: 295px;" data-wow-delay="40ms">
                     <div class="overlay"></div>
                     <div class="card-body">
                         <h2>Pune</h2>
@@ -348,7 +354,7 @@
             </div>
 
             <div class="col-md-3 mb-4">
-                <div class="card" style="width: 295px;">
+                <div class="card wow animate__animated animate__fadeIn" style="width: 295px;" data-wow-delay="80ms">
                     <div class="overlay"></div>
                     <div class="card-body">
                         <h2>Nashik</h2>
@@ -365,7 +371,7 @@
 
 
             <div class="col-md-3 mb-4">
-                <div class="card" style="width: 295px;">
+                <div class="card wow animate__animated animate__fadeIn" style="width: 295px;" data-wow-delay="120ms">
                     <div class="overlay"></div>
                     <div class="card-body">
                         <h2>Amravati</h2>
@@ -381,7 +387,7 @@
             </div>
 
             <div class="col-md-3 mb-4">
-                <div class="card" style="width: 295px;">
+                <div class="card wow animate__animated animate__fadeIn" style="width: 295px;" data-wow-delay="160ms">
                     <div class="overlay"></div>
                     <div class="card-body">
                         <h2>Aurangabad</h2>
@@ -397,7 +403,7 @@
             </div>
 
             <div class="col-md-3 mb-4">
-                <div class="card" style="width: 295px;">
+                <div class="card wow animate__animated animate__fadeIn" style="width: 295px;" data-wow-delay="100ms">
                     <div class="overlay"></div>
                     <div class="card-body">
                         <h2>Nanded</h2>
@@ -413,7 +419,7 @@
             </div>
 
             <div class="col-md-3 mb-4">
-                <div class="card" style="width: 295px;">
+                <div class="card wow animate__animated animate__fadeIn" style="width: 295px;" data-wow-delay="120ms">
                     <div class="overlay"></div>
                     <div class="card-body">
                         <h2>Nagpur</h2>
@@ -434,50 +440,50 @@
 
     <!-- Brand & Partner Section -->
 
-    <div class="container wrapper">
+    <div class="container">
         <div class="owl-carousel owl-theme">
 
             <div class="item">
-                <img src="images/Make In India.svg" alt="AmritMahotsav" srcset="">
+                <img class="wow animate__animated animate__fadeIn" src="images/Make In India.svg" alt="AmritMahotsav" srcset="">
             </div>
             <div class="item">
-                <img src="images/Maharashtra Police.svg" alt="AmritMahotsav" srcset="">
+                <img class="wow animate__animated animate__zoomIn" src="images/Maharashtra Police.svg" alt="AmritMahotsav" srcset="">
             </div>
             <div class="item">
-                <img src="images/Cbi.svg" alt="AmritMahotsav" srcset="">
+                <img class="wow animate__animated animate__zoomIn" src="images/Cbi.svg" alt="AmritMahotsav" srcset="">
             </div>
             <div class="item">
-                <img src="images/Swacch-Bharat.svg" alt="AmritMahotsav" srcset="">
+                <img class="wow animate__animated animate__zoomIn" src="images/Swacch-Bharat.svg" alt="AmritMahotsav" srcset="">
             </div>
             <div class="item">
-                <img src="images/Digital-India.svg" alt="AmritMahotsav" srcset="">
+                <img class="wow animate__animated animate__zoomIn" src="images/Digital-India.svg" alt="AmritMahotsav" srcset="">
             </div>
             <div class="item">
-                <img src="images/NIC_logo.svg" alt="AmritMahotsav" srcset="">
+                <img class="wow animate__animated animate__zoomIn" src="images/NIC_logo.svg" alt="AmritMahotsav" srcset="">
             </div>
             <div class="item">
-                <img src="images/Ministry-of-Minority-Affairs.svg" alt="AmritMahotsav" srcset="">
+                <img class="wow animate__animated animate__zoomIn" src="images/Ministry-of-Minority-Affairs.svg" alt="AmritMahotsav" srcset="">
             </div>
             <div class="item">
-                <img src="images/Ministry_of_Electronics_and_Information_Technology.svg" alt="AmritMahotsav" srcset="">
+                <img class="wow animate__animated animate__zoomIn" src="images/Ministry_of_Electronics_and_Information_Technology.svg" alt="AmritMahotsav" srcset="">
             </div>
             <div class="item">
-                <img src="images/PMO_India_Logo.svg" alt="AmritMahotsav" srcset="">
+                <img class="wow animate__animated animate__zoomIn" src="images/PMO_India_Logo.svg" alt="AmritMahotsav" srcset="">
             </div>
             <div class="item">
-                <img src="images/Mygov.svg" alt="AmritMahotsav" srcset="">
+                <img class="wow animate__animated animate__zoomIn" src="images/Mygov.svg" alt="AmritMahotsav" srcset="">
             </div>
             <div class="item">
-                <img src="images/Indiagovin.svg" alt="AmritMahotsav" srcset="">
+                <img class="wow animate__animated animate__zoomIn" src="images/Indiagovin.svg" alt="AmritMahotsav" srcset="">
             </div>
             <div class="item">
-                <img src="images/swatantra amrut mahotsav.svg" alt="AmritMahotsav" srcset="">
+                <img class="wow animate__animated animate__zoomIn" src="images/swatantra amrut mahotsav.svg" alt="AmritMahotsav" srcset="">
             </div>
             <div class="item">
-                <img src="images/Bureau Of Police Research and Development.svg" alt="AmritMahotsav" srcset="">
+                <img class="wow animate__animated animate__zoomIn" src="images/Bureau Of Police Research and Development.svg" alt="AmritMahotsav" srcset="">
             </div>
             <div class="item">
-                <img src="images/Govt. Of Maharashtra.svg" alt="AmritMahotsav" srcset="">
+                <img class="wow animate__animated animate__zoomIn" src="images/Govt. Of Maharashtra.svg" alt="AmritMahotsav" srcset="">
             </div>
 
         </div>
@@ -487,7 +493,7 @@
     <!-- footer-section start-->
 
     <custom-footer></custom-footer>
-    
+
     <!-- footer-section ends-->
 
 
@@ -508,6 +514,11 @@
     <!-- Custom-JS -->
     <script src="JS/main.js"></script>
     <script src="JS/headerFooterManager.js"></script>
+
+    <!-- WOW JS -->
+    <script>
+        new WOW().init();
+    </script>
 </body>
 
 </html>

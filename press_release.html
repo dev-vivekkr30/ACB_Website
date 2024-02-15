@@ -13,6 +13,12 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/responsive.css">
+    
+    <!-- Animate JS CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+        integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     <!-- Owl Carousel CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
@@ -35,16 +41,16 @@
 
         <div class="container">
             <!-- Page Heading -->
-            <div class="wrapper page-title d-flex justify-content-start align-items-center">
+            <div class="wrapper page-title d-flex justify-content-start align-items-center wow animate__animated animate__slideInLeft">
                 <img src="images/doc-icon.svg" class="pe-2" alt="doc-icon">
                 <h1 class="m-0">Press Release</h1>
             </div>
             <!-- Page Heading Ends -->
 
             <!-- Input Form Starts -->
-            <div class="form-section mb-4">
+            <div class="form-section mb-4 wow animate__animated animate__slideInLeft">
                 <div class="row align-items-end">
-                    <div class="col-md-4">
+                    <div class="col-md-5">
                         <div class="mb-3">
                             <label for="InputRange" class="form-label text-muted">Ranges*</label>
                             <select class="form-select rounded-pill" aria-label="Default select">
@@ -62,7 +68,7 @@
                         </div>
                     </div>
                     
-                    <div class="col-md-4">
+                    <div class="col-md-5">
                         <div class="mb-3">
                             <label for="InputUnitoffice" class="form-label text-muted">Unit Offices*</label>
                             <select class="form-select rounded-pill" aria-label="Default select">
@@ -79,10 +85,9 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-2">
                         <div class="mb-3">
-                            <button class="default-btn w-100">Submit <span><img src="images/arrow.svg" alt="arrow"
-                                        srcset=""></span></button>
+                            <button class="default-btn w-100">Submit</button>
                         </div>
                     </div>
                 </div>
@@ -92,7 +97,7 @@
 
             <!-- Data Table Start -->
 
-            <table class="table table-hover">
+            <table class="table table-hover wow animate__animated animate__slideInLeft">
                 <thead style="
                 background-color: var(--primary-color);
                 color: var(--white-color);
@@ -246,6 +251,12 @@
         <!-- Custom-JS -->
         <script src="JS/main.js"></script>
         <script src="JS/headerFooterManager.js"></script>
+
+        
+        <!-- WOW JS -->
+        <script>
+            new WOW().init();
+        </script>
 </body>
 
 </html>
