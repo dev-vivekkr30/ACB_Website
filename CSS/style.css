@@ -67,17 +67,27 @@ a {
     font-family: var(--primary-font);
 }
 
+a:hover{
+    color: var(--black-color);
+}
+
+.tabel-text-center{
+    text-align: center !important;
+}
+
 /* default-button & Secondary Button */
 
 .default-btn {
     font-size: 16px;
+    line-height: 16px;
     font-weight: 500;
+    width: auto;
     height: 42px;
     color: var(--white-color);
     background-color: var(--secondary-color);
-    padding: 8px 16px !important;
+    padding: 14px 28px !important;
     border: none;
-    border-radius: 25px;
+    border-radius: 50px;
     line-height: normal;
 }
 
@@ -91,7 +101,7 @@ a {
     font-weight: 500;
     color: var(--white-color);
     background-color: var(--black-color);
-    padding: 8px 16px;
+    padding: 6px 12px;
     border-radius: 50px;
     width: 88px;
     height: 36px;
@@ -229,16 +239,20 @@ a {
     margin-right: 0px;
     right: 0;
 }
-.float-btn .whatsapp-btn{
+.float-btn .whatsapp-btn {
     position: fixed;
-    right:0;
+    right: 0;
+    top: 110px;
 }
+
 .call-btn {
     position: fixed;
+    top: 196px;
 }
 
 .mail-btn {
     position: fixed;
+    top: 284px;
 }
 
 .float-cta-btn .content {
@@ -613,9 +627,9 @@ footer .footer-copyright p {
 
 .form-select,
 .form-control,
-#inputGroupFile02 {
+#inputGroupFile02, .default-btn  {
     font-size: 16px;
-    height: 52px;
+    height: 56px;
 }
 
 .complaint-form-section .form-control::placeholder {
@@ -657,4 +671,50 @@ footer .footer-copyright p {
     width: fit-content;
     border: none;
     float: right;
+}
+
+/* File a Complaint option */
+.header-banner{
+    background-image: url('/images/header-banner.jpg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-banner h2{
+    color: var(--white-color);
+    font-size: 24px;
+}
+
+.header-banner p{
+    color: #804602;
+    font-size: 18px;
+}
+
+.complaint-btn-active{
+    display: block;
+    text-align: center;
+    width: 100%;
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 16px 32px;
+    border-radius: 5px;
+    margin: 0;
+}
+
+.complaint-btn{
+    display: block;
+    text-align: center;
+    width: 100%;
+    border: 1px solid var(--black-color);
+    background-color: transparent;
+    color: var(--black-color);
+    padding: 16px 32px;
+    border-radius: 5px;
+    margin: 0;
+}
+.complaint-btn:hover{
+    color: var(--black-color);
+    background-color: #f4f4f4;
 }
