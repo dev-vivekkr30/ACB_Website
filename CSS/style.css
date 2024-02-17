@@ -116,7 +116,20 @@ a:hover{
     padding: 6px 12px;
     border-radius: 50px;
     width: 88px;
-    height: 36px;
+    height: 56px;
+    border: none;
+    line-height: normal;
+}
+
+.secondary-btn-border{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--black-color);
+    padding: 6px 12px;
+    border: 1px solid var(--black-color) !important;
+    border-radius: 50px;
+    width: 88px;
+    height: 56px;
     border: none;
     line-height: normal;
 }

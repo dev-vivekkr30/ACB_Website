@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/responsive.css">
 
-    
+
     <!-- Animate JS CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
         integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
@@ -50,12 +50,15 @@
                 <div class="col-md-8 p-4 wrapper complaint-form wow animate__animated animate__zoomIn">
                     <div class="row">
                         <div class="col-md-4 mob-m-4">
-                            <a href="bribe-demand-complaint.html" class="complaint-btn-active">Bribe Demand Complaint</a>
-                        </div>
-                        <div class="col-md-5 mob-m-4"><a href="asset_complaint.html" class="complaint-btn">Disproportionate Assets
+                            <a href="bribe-demand-complaint.html" class="complaint-btn-active">Bribe Demand
                                 Complaint</a>
                         </div>
-                        <div class="col-md-3 mob-m-4"><a href="other_complaint.html" class="complaint-btn">Misuse of Power</a></div>
+                        <div class="col-md-5 mob-m-4"><a href="asset_complaint.html"
+                                class="complaint-btn">Disproportionate Assets
+                                Complaint</a>
+                        </div>
+                        <div class="col-md-3 mob-m-4"><a href="other_complaint.html" class="complaint-btn">Misuse of
+                                Power</a></div>
                     </div>
 
                     <div class="row">
@@ -68,7 +71,7 @@
                                     <div class="col-md-6">
                                         <div class="">
                                             <input type="text" class="form-control form-control-lg rounded-pill mob-m-4"
-                                                placeholder="Enter Name" id="FormControlName" required>
+                                                placeholder="Enter Name*" id="FormControlName" required>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
@@ -87,13 +90,13 @@
                                     <div class="col-md-6">
                                         <div class="">
                                             <input type="text" class="form-control form-control-lg rounded-pill mob-m-4"
-                                                placeholder="Enter Name" id="FormControlName" required>
+                                                placeholder="Enter Name*" id="FormControlName" required>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="">
                                             <input type="text" class="form-control form-control-lg rounded-pill"
-                                                placeholder="Department" id="FormControlName" required>
+                                                placeholder="Department*" id="FormControlName" required>
                                         </div>
                                     </div>
                                 </div>
@@ -102,9 +105,9 @@
 
                                     <div class="col-md-6">
                                         <div class="mb-3">
-                                            <select class="form-select form-control-lg rounded-pill"
+                                            <select required class="form-select form-control-lg rounded-pill"
                                                 aria-label="Default select">
-                                                <option value="Thane" selected>Select district</option>
+                                                <option value="Thane" selected>Select district*</option>
                                                 <option value="Thane">Thane</option>
                                                 <option value="Navi Mumbai">Navi Mumbai</option>
                                                 <option value="Raigad">Raigad</option>
@@ -147,7 +150,7 @@
                                     <div class="col-md-6">
                                         <div class="mb-3">
                                             <input type="text" class="form-control form-control-lg rounded-pill"
-                                                placeholder="Bride Demanded" id="FormControlName" required>
+                                                placeholder="Bride Demanded *" id="FormControlName" required>
                                         </div>
                                     </div>
 
@@ -160,7 +163,7 @@
                                             <div class="form-floating">
                                                 <textarea class="form-control rounded"
                                                     placeholder="Leave a comment here" id="floatingTextarea2"
-                                                    style="height: 100px; border-radius: 12px !important;"></textarea>
+                                                    style="height: 100px; border-radius: 12px !important;" required></textarea>
                                                 <label for="floatingTextarea2">Wrok Pending</label>
                                             </div>
                                         </div>
@@ -197,8 +200,11 @@
                             </div>
 
                             <div class="row align-items-center mt-4">
-                                <div class="col-md-12">
+                                <div class="col-md-6">
                                     <button class="btn default-btn w-100"><b>Submit Complaint</b></button>
+                                </div>
+                                <div class="col-md-6">
+                                    <button class="btn secondary-btn-border w-100"><b>Reset</b></button>
                                 </div>
                             </div>
 
@@ -207,7 +213,7 @@
                         <!-- Input Form Ends -->
                     </div>
                 </div>
-                <div class="col-md-4 wrapper p-4 contact-sidebar wow animate__animated animate__zoomIn">
+                <div class="col-md-4 p-4 contact-sidebar wow animate__animated animate__zoomIn">
                     <div class="p-4 contact-info-sidebar ">
                         <div class="sidebar-body pb-4 mb-4 d-flex justify-content-start align-items-start">
                             <img src="images/support-icon.svg" class="me-2" alt="" srcset="">
@@ -221,7 +227,7 @@
                             <img src="images/Call-icon-dark.svg" class="me-2" alt="" srcset="">
                             <div class="sidebar-text">
                                 <p>Telephone no.</p>
-                                <h2>24954826, 24921212</h2>
+                                <h2><a href="tel:24954826">24954826</a>, <a href="tel:24921212">24921212</a></h2>
                             </div>
                         </div>
 
@@ -237,15 +243,19 @@
                             <img src="images/whatsapp-dark.svg" class="me-2" alt="" srcset="">
                             <div class="sidebar-text">
                                 <p>WhatsApp Number</p>
-                                <h2>9930997700</h2>
+                                <a href="https://wa.me/919930997700" target="_blank">
+                                    <h2>9930997700</h2>
+                                </a>
                             </div>
                         </div>
 
                         <div class="sidebar-body-info d-flex justify-content-start align-items-start">
-                            <img src="images/whatsapp-dark.svg" class="me-2" alt="" srcset="">
+                            <img src="images/Email.svg" class="me-2" alt="" srcset="">
                             <div class="sidebar-text">
                                 <p>Email</p>
-                                <h2>acbwebmail@mahapolice.gov.in</h2>
+                                <a href="mailto:acbwebmail@mahapolice.gov.in">
+                                    <h2>acbwebmail@mahapolice.gov.in</h2>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -253,16 +263,9 @@
             </div>
         </div>
 
-        <div class="container wrapper">
-
-
-
-
-        </div>
-
         <!-- Brand & Partner Section -->
 
-        <div class="container wrapper">
+        <div class="container">
             <div class="owl-carousel owl-theme">
 
                 <div class="item">
@@ -338,7 +341,7 @@
         <script src="JS/main.js"></script>
         <script src="JS/headerFooterManager.js"></script>
 
-        
+
         <!-- WOW JS -->
         <script>
             new WOW().init();
