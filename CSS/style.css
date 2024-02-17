@@ -19,6 +19,18 @@
 }
 
 
+/* Scroll-bar */
+
+::-webkit-scrollbar{
+    background-color: transparent;
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--gray-color);
+    border-radius: 24px;
+}
+
 /* Typography */
 
 h1 {
@@ -199,6 +211,7 @@ a:hover{
 
 .top-navbar .navbar .navbar-nav .nav-item .nav-link {
     color: var(--black-color);
+    font-size: 14px !important;
 }
 
 .top-navbar .navbar .navbar-nav .nav-item .active {
@@ -332,9 +345,6 @@ a:hover{
 
 .cta-latest-section .card .card-body .card-title .card-icon {
     display: block;
-    height: 52px;
-    width: 52px;
-    background: rgba(0, 0, 0, 0.2);
     border-radius: 50px;
     display: flex;
     justify-content: center;
@@ -480,35 +490,35 @@ a:hover{
 }
 
 .head-office-section .row .col-md-3:nth-child(1) .card {
-    background-image: url('/images/mumbai.jpg');
+    background-image: url('../images/mumbai.jpg');
 }
 
 .head-office-section .row .col-md-3:nth-child(2) .card {
-    background-image: url('/images/thane.jpg');
+    background-image: url('../images/thane.jpg');
 }
 
 .head-office-section .row .col-md-3:nth-child(3) .card {
-    background-image: url('/images/pune.jpg');
+    background-image: url('../images/pune.jpg');
 }
 
 .head-office-section .row .col-md-3:nth-child(4) .card {
-    background-image: url('/images/nashik.jpg');
+    background-image: url('../images/nashik.jpg');
 }
 
 .head-office-section .row:nth-child(2) .col-md-3:nth-child(5) .card {
-    background-image: url('/images/amravati.jpg');
+    background-image: url('../images/amravati.jpg');
 }
 
 .head-office-section .row .col-md-3:nth-child(6) .card {
-    background-image: url('/images/aurangabad.jpg');
+    background-image: url('../images/aurangabad.jpg');
 }
 
 .head-office-section .row .col-md-3:nth-child(7) .card {
-    background-image: url('/images/nanded.jpg');
+    background-image: url('../images/nanded.jpg');
 }
 
 .head-office-section .row .col-md-3:nth-child(8) .card {
-    background-image: url('/images/nagpur.jpg');
+    background-image: url('../images/nagpur.jpg');
 }
 
 .head-office-section .row .col-md-3:nth-child(1) .card .overlay {
@@ -546,7 +556,7 @@ a:hover{
 /* footer section */
 
 footer {
-    background-image: url('/images/footer-bg.jpg');
+    background-image: url('../images/footer-bg.jpg');
     overflow: hidden;
 }
 
@@ -690,7 +700,7 @@ footer .footer-copyright p {
 
 /* File a Complaint option */
 .header-banner{
-    background-image: url('/images/header-banner.jpg');
+    background-image: url('../images/header-banner.jpg');
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
@@ -744,7 +754,7 @@ footer .footer-copyright p {
     width: 100%;
     height:720px;
     border-radius: 12px;
-    background-image: url('/images/contact-side-bar-bg.jpg');
+    background-image: url('../images/contact-side-bar-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -759,7 +769,7 @@ footer .footer-copyright p {
 }
 
 .contact-info-sidebar .sidebar-body-info{
-    margin-bottom: 18px;
+    margin-bottom: 14px;
 }
 
 .contact-info-sidebar .sidebar-body-info .sidebar-text h2, .contact-info-sidebar .sidebar-body-info .sidebar-text a{
@@ -768,5 +778,9 @@ footer .footer-copyright p {
 }
 .contact-info-sidebar .sidebar-body-info .sidebar-text p{
     color: #CDCECE;
-    margin-bottom: 8px;
+    margin-bottom: 4px;
+}
+
+.contact-info-sidebar .sidebar-body-info .sidebar-text h2{
+    font-size: 18px;
 }
