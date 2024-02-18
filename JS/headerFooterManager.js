@@ -1,18 +1,39 @@
-class CustomHeader extends HTMLElement{
-    connectedCallback(){
+class CustomHeader extends HTMLElement {
+    connectedCallback() {
         this.innerHTML = `
         <!-- Top Bar with Search and Menu Option for Mobile Only Starts-->
         <div class="top-bar-mob d-flex justify-content-between align-items-center">
-            <div class="input-group">
-                <input type="text" class="form-control top-search-bar" placeholder="Search here..."
-                    aria-label="Recipient's username" aria-describedby="button-addon2">
+            <div class="top-bar-mob-left">
+            <button type="button" class="search-btn" data-bs-toggle="modal" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="images/search-black.svg" alt="search-icon"></button>
+            <select class="lang-select" name="lang" id="lang">
+                <option value="English">Eng</option>
+                <option value="marathi">मराठी</option>
+                <option value="hindi">हिन्दी</option>
+            </select>
             </div>
-    
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                            <div class="modal-body">
+                                <form class="d-flex">
+                                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <!--<button class="secondary-btn" style="border-radius: 4px;height: 56px;" type="submit"><img src="images/search.svg" alt="search-icon"></button> -->
+                                </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
             <button class="navbar-toggler d-flex justify-content-between align-items-center fs-6 p-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
                 aria-controls="offcanvasExample">Menu<span><img class="ms-2 navbar-toggler-icon" style="width:16px" src="images/menu-bars.svg" alt="menu-bar"
                         srcset=""></span>
             </button>
-    
+
             <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
                 aria-labelledby="offcanvasExampleLabel">
                 <div class="offcanvas-header">
@@ -77,7 +98,11 @@ class CustomHeader extends HTMLElement{
                                 <a href="#" id="aMinus">A-</a>
                                 <a href="#" id="aReset">A</a>
                                 <a href="#" id="aPlus">A+</a>
-                                <a href="#">मराठी</a>
+                                <select class="lang-select" name="lang" id="lang">
+                                    <option value="English">Eng</option>
+                                    <option value="marathi">मराठी</option>
+                                    <option value="hindi">हिन्दी</option>
+                                </select>
                             </div>
                             <!-- Search Bar -->
                             <div class="input-group mb-3">
@@ -137,12 +162,12 @@ class CustomHeader extends HTMLElement{
             </div>
             <!-- Navigation Bar Ends -->
         </div>
-        `
+        `;
     }
 }
 
-class CustomFooter extends HTMLElement{
-    connectedCallback(){
+class CustomFooter extends HTMLElement {
+    connectedCallback() {
         this.innerHTML = `
         <footer class="wrapper">
         <div class="container">
@@ -251,26 +276,25 @@ class CustomFooter extends HTMLElement{
             </div>
         </div>
     </footer>
-        `
+        `;
     }
 }
 
-customElements.define('custom-header', CustomHeader)
-customElements.define('custom-footer', CustomFooter)
-
+customElements.define("custom-header", CustomHeader);
+customElements.define("custom-footer", CustomFooter);
 
 // font sizing reseting
 
 let curruntFontSize = 16;
-$("#aPlus").click(()=> {
+$("#aPlus").click(() => {
     curruntFontSize = curruntFontSize * 1.2;
-    $("body").css({'font-size':`${curruntFontSize}px`})
-})
-$("#aMinus").click(()=> {
+    $("*").css({ "font-size": `${curruntFontSize}px` });
+});
+$("#aMinus").click(() => {
     curruntFontSize = curruntFontSize / 1.2;
-    $("body").css({'font-size':`${curruntFontSize}px`})
-})
-$("#aReset").click(()=> {
+    $("*").css({ "font-size": `${curruntFontSize}px` });
+});
+$("#aReset").click(() => {
     curruntFontSize = 16;
-    $("body").css({'font-size':`${curruntFontSize}px`})
-})
+    $("*").css({ "font-size": `${curruntFontSize}px` });
+});

@@ -35,30 +35,6 @@ function showFileName(inputId) {
 function addFileInput() {
     const container = document.getElementById('fileUploadContainer');
     const inputCount = container.querySelectorAll('.file-upload').length + 1;
-
-    // const newFileInput = document.createElement('div');
-    // newFileInput.classList.add('file-upload');
-
-    // const input = document.createElement('input');
-    // input.type = 'file';
-    // input.id = 'fileInput' + inputCount;
-    // input.classList.add('file-input');
-    // input.setAttribute('onchange', 'showFileName("fileInput' + inputCount + '")');
-
-    // const label = document.createElement('label');
-    // label.setAttribute('for', 'fileInput' + inputCount);
-    // label.innerHTML = 'Upload File <span><img src="images/Upload.svg" alt=""></span>';
-    // label.classList.add('me-2');
-
-    // const fileName = document.createElement('span');
-    // fileName.id = 'fileName' + inputCount;
-    // fileName.classList.add('file-name');
-
-    // newFileInput.appendChild(input);
-    // newFileInput.appendChild(label);
-    // newFileInput.appendChild(fileName);
-    // container.appendChild(newFileInput);
-
     const newFileInput = document.createElement('div');
     newFileInput.classList.add('file-upload');
 
@@ -88,31 +64,39 @@ function addFileInput() {
 
 }
 
+// Define a function to start the counter
+document.addEventListener("DOMContentLoaded", function() {
+    // Select the target element
+    var statsSection = document.querySelector('.stats-section');
 
-// number count for stats, using jQuery animate
+    // Create a new Intersection Observer
+    var observer = new IntersectionObserver(function(entries) {
+        // Check if the target element is intersecting with the viewport
+        if (entries[0].isIntersecting) {
+            // If intersecting, start counting for each card
+            var countingElements = document.querySelectorAll('.counting');
+            countingElements.forEach(function(element) {
+                var target = parseInt(element.getAttribute('data-count'));
+                var current = 0;
 
-$('.counting').each(function() {
-    var $this = $(this),
-        countTo = $this.attr('data-count');
-    
-    $({ countNum: $this.text()}).animate({
-      countNum: countTo
-    },
-  
-    {
-  
-      duration: 3000,
-      easing:'linear',
-      step: function() {
-        $this.text(Math.floor(this.countNum));
-      },
-      complete: function() {
-        $this.text(this.countNum);
-        //alert('finished');
-      }
-  
-    });  
-    
-  
-  });
+                var timer = setInterval(function() {
+                    element.textContent = current;
+
+                    current++;
+
+                    if (current > target) {
+                        clearInterval(timer);
+                        element.textContent = target;
+                    }
+                }, 50);
+            });
+
+            // Unobserve the target element to prevent unnecessary counting
+            observer.unobserve(statsSection);
+        }
+    });
+
+    // Start observing the target element
+    observer.observe(statsSection);
+});
 
