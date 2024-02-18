@@ -18,7 +18,7 @@ class CustomHeader extends HTMLElement {
                     <div class="modal-content">
                             <div class="modal-body">
                                 <form class="d-flex">
-                                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                    <input class="form-control rounded-pill me-2" type="search" placeholder="Search" aria-label="Search">
                                 <!--<button class="secondary-btn" style="border-radius: 4px;height: 56px;" type="submit"><img src="images/search.svg" alt="search-icon"></button> -->
                                 </form>
                         </div>
