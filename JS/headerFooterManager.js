@@ -285,7 +285,7 @@ customElements.define("custom-footer", CustomFooter);
 
 // font sizing reseting
 
-let curruntFontSize = 16;
+let curruntFontSize = 14;
 $("#aPlus").click(() => {
     curruntFontSize = curruntFontSize * 1.2;
     $("*").css({ "font-size": `${curruntFontSize}px` });
@@ -295,6 +295,6 @@ $("#aMinus").click(() => {
     $("*").css({ "font-size": `${curruntFontSize}px` });
 });
 $("#aReset").click(() => {
-    curruntFontSize = 16;
+    curruntFontSize = 14;
     $("*").css({ "font-size": `${curruntFontSize}px` });
 });

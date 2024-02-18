@@ -18,7 +18,7 @@
 }
 
 body {
-    font-size: 16px;
+    font-size: 14px;
     font-family: var(--primary-font);
 }
 
@@ -94,14 +94,15 @@ a:hover{
 /* default-button & Secondary Button */
 
 .default-btn {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 16px;
     font-weight: 500;
     width: auto;
     height: 42px;
     color: var(--white-color);
     background-color: var(--secondary-color);
-    padding: 14px 28px !important;
+    padding: 16px 28px !important;
+    font-size: 14px;
     border: none;
     border-radius: 50px;
     line-height: normal;
@@ -207,6 +208,16 @@ a:hover{
 
 .top-navbar .top-bar .top-link-search .top-search-bar::placeholder {
     padding-left: 16px;
+}
+
+.top-bar-links, .top-call-info{
+    font-size: 14px;
+}
+
+.top-bar .lang-select{
+    border-color: var(--white-color);
+    border-radius: 4px;
+    height: 24px;
 }
 
 /* Navbar */
@@ -713,7 +724,7 @@ footer .footer-copyright p {
 .form-select,
 .form-control,
 #inputGroupFile02, .default-btn  {
-    font-size: 16px;
+    font-size: 14px;
     height: 56px;
 }
 
