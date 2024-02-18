@@ -74,9 +74,9 @@ class CustomHeader extends HTMLElement{
                         <div class="col-md-6 top-link-search d-flex justify-content-start align-items-center">
                             <div class="top-bar-links me-4">
                                 <a href="#head_office">Go To Main Content</a>
-                                <a href="#">A-</a>
-                                <a href="#">A</a>
-                                <a href="#">A+</a>
+                                <a href="#" id="aMinus">A-</a>
+                                <a href="#" id="aReset">A</a>
+                                <a href="#" id="aPlus">A+</a>
                                 <a href="#">मराठी</a>
                             </div>
                             <!-- Search Bar -->
@@ -257,3 +257,20 @@ class CustomFooter extends HTMLElement{
 
 customElements.define('custom-header', CustomHeader)
 customElements.define('custom-footer', CustomFooter)
+
+
+// font sizing reseting
+
+let curruntFontSize = 16;
+$("#aPlus").click(()=> {
+    curruntFontSize = curruntFontSize * 1.2;
+    $("body").css({'font-size':`${curruntFontSize}px`})
+})
+$("#aMinus").click(()=> {
+    curruntFontSize = curruntFontSize / 1.2;
+    $("body").css({'font-size':`${curruntFontSize}px`})
+})
+$("#aReset").click(()=> {
+    curruntFontSize = 16;
+    $("body").css({'font-size':`${curruntFontSize}px`})
+})
