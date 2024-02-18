@@ -40,7 +40,7 @@
         <!-- Page Heading -->
         <div class="header-banner wrapper wow animate__animated animate__fadeIn">
             <div class="container">
-                <h1 class="m-0">Legal</h1>
+                <h1 class="m-0 text-white">Legal</h1>
                 <h4>Register Your Complain Below</h4>
             </div>
         </div>
@@ -164,25 +164,37 @@
 
             <!-- Data Tabel Ends -->
 
-            <!-- Pagination Starts -->
+            <!-- Pagination And Row Dropdown Starts -->
+            <div class="table-bottom d-flex justify-content-between align-items-center">
+                <!-- Pagination -->
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination pagination-gap mt-3">
+                        <li class="page-item">
+                            <a class="page-link btn-chevron-left" href="#" aria-label="Previous"><img
+                                    src="images/carat-left.svg" alt=""></a>
+                        </li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item">
+                            <a class="page-link btn-chevron" href="#" aria-label="Next"><img
+                                    src="images/carat-right.svg" alt="" srcset=""></a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- Pagination Ends -->
 
-            <nav aria-label="Page navigation example">
-                <ul class="pagination pagination-gap justify-content-center">
-                    <li class="page-item">
-                        <a class="page-link btn-chevron-left" href="#" aria-label="Previous"><img
-                                src="images/carat-left.svg" alt=""></a>
-                    </li>
-                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item">
-                        <a class="page-link btn-chevron" href="#" aria-label="Next"><img src="images/carat-right.svg"
-                                alt="" srcset=""></a>
-                    </li>
-                </ul>
-            </nav>
-
-            <!-- Pagination Ends -->
+                <!-- Row Dropdrop ends  -->
+                <div class="show-row d-flex justify-content-between align-items-center">
+                    <p class="p-0 m-0 me-2">Rows per page</p>
+                    <select class="form-select form-select-sm" style="width: 80px; height: 40px;"
+                        aria-label=".form-select-sm example">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+                <!-- Row Dropdown ends -->
+            </div>
+            <!-- Pagination And Row Dropdown -->
         </div>
 
         <!-- Brand & Partner Section -->

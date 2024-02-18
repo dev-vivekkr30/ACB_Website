@@ -8,8 +8,8 @@ class CustomHeader extends HTMLElement{
                     aria-label="Recipient's username" aria-describedby="button-addon2">
             </div>
     
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
-                aria-controls="offcanvasExample"><span class="navbar-toggler-icon"><img src="images/menu-bars.svg" alt=""
+            <button class="navbar-toggler d-flex justify-content-between align-items-center fs-6 p-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                aria-controls="offcanvasExample">Menu<span><img class="ms-2 navbar-toggler-icon" style="width:16px" src="images/menu-bars.svg" alt="menu-bar"
                         srcset=""></span>
             </button>
     

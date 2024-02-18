@@ -156,11 +156,15 @@
     }
 
     .call-btn {
-        top: 248px;
+        top: 195px;
     }
 
     .mail-btn {
-        top: 320px;
+        top: 280px;
+    }
+
+    .online-complaint{
+        top: 366px;
     }
 
     .default-btn {
@@ -260,6 +264,15 @@
 
 @media only screen and (max-width:480px) {
 
+    .float-cta-btn {
+        width:54px;
+        height: 54px;
+    }
+    
+    .float-cta-btn:hover{
+        width: 300px;
+    }
+
     .mob-m-4{
         margin-bottom: 1rem;
     }
@@ -292,6 +305,10 @@
 
     .mail-btn {
         top: 252px;
+    }
+
+    .online-complaint{
+        top: 324px ;
     }
 
     .headline {
