@@ -98,10 +98,10 @@ a:hover{
     line-height: 16px;
     font-weight: 500;
     width: auto;
-    height: 42px;
+    height: 46px;
     color: var(--white-color);
     background-color: var(--secondary-color);
-    padding: 16px 28px !important;
+    padding: 13px 28px !important;
     font-size: 14px;
     border: none;
     border-radius: 50px;
@@ -114,14 +114,13 @@ a:hover{
 }
 
 .secondary-btn {
-    font-size: 16px;
-    font-weight: 500;
     color: var(--white-color);
     background-color: var(--black-color);
-    padding: 6px 12px;
+    padding: 4px 12px;
     border-radius: 50px;
-    width: 88px;
-    height: 42px;
+    width: 80px;
+    font-size: 14px;
+    height: 34px;
     border: none;
     line-height: normal;
 }
@@ -134,7 +133,7 @@ a:hover{
     border: 1px solid var(--black-color) !important;
     border-radius: 50px;
     width: 88px;
-    height: 56px;
+    height: 46px;
     border: none;
     line-height: normal;
 }
@@ -725,7 +724,7 @@ footer .footer-copyright p {
 .form-control,
 #inputGroupFile02, .default-btn  {
     font-size: 14px;
-    height: 56px;
+    height: 46px;
 }
 
 .complaint-form-section .form-control::placeholder {
@@ -754,7 +753,7 @@ footer .footer-copyright p {
     color: #66718E;
     padding: 4px 8px;
     border: 1px solid #DAECFF;
-    border-radius: 5px;
+    border-radius: 25px;
     cursor: pointer;
     display: block;
     width: max-content;
@@ -788,9 +787,11 @@ footer .footer-copyright p {
     background-size: cover;
 }
 
-.table tbody tr th {
-    padding: 16px 0px !important;
+
+.table tbody tr th, .table tbody tr td {
+    padding: 8px;
 }
+
 
 .header-banner h2{
     color: var(--white-color);
