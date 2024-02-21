@@ -52,7 +52,7 @@ class CustomHeader extends HTMLElement {
                             <a class="nav-link" href="#">Events</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Statistics</a>
+                            <a class="nav-link" href="statistics.html">Statistics</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">DG′s Message</a>
@@ -137,7 +137,7 @@ class CustomHeader extends HTMLElement {
                                         <a class="nav-link" href="#">Events</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Statistics</a>
+                                        <a class="nav-link" href="statistics.html">Statistics</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="#">DG′s Message</a>
@@ -175,7 +175,7 @@ class CustomFooter extends HTMLElement {
                 <div class="col-md-2">
                     <h3 class="link-title">QUICK LINKS</h3>
                     <ul>
-                        <a href="">
+                        <a href="rti.html">
                             <li class="footer-link">Right To Information</li>
                         </a>
                         <a href="#">
