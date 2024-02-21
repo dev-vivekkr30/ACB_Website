@@ -87,7 +87,7 @@ a:hover{
     color: var(--black-color);
 }
 
-.tabel-text-center{
+.table-text-center{
     text-align: center !important;
 }
 
@@ -278,9 +278,9 @@ a:hover{
     display: grid;
 }
 .float-cta-btn {
-    z-index:2;
+    z-index: 2;
     background-color: var(--white-color);
-    padding: 8px;
+    padding: 6px;
     margin: 16px;
     display: flex !important;
     justify-content: start;
@@ -288,8 +288,8 @@ a:hover{
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
-    width:60px;
-    height: 65px;
+    width: 50px;
+    height: 54px;
     overflow: hidden;
     font-size: 18px;
     font-weight: bold;
@@ -297,6 +297,10 @@ a:hover{
     right: 0;
     transition: width 1s;
     overflow: hidden;
+}
+
+.float-cta-btn img{
+    max-width: 38px;
 }
 
 .float-cta-btn:hover{
@@ -310,17 +314,17 @@ a:hover{
 
 .call-btn {
     position: fixed;
-    top: 196px;
+    top: 176px;
 }
 
 .mail-btn {
     position: fixed;
-    top: 284px;
+    top: 242px;
 }
 
 .online-complaint {
     position: fixed;
-    top: 374px;
+    top: 308px;
 }
 
 .float-cta-btn .content {
@@ -790,6 +794,11 @@ footer .footer-copyright p {
 
 .table tbody tr th, .table tbody tr td {
     padding: 8px;
+    vertical-align: middle !important;
+}
+
+.table tbody tr td{
+    text-align: center;
 }
 
 
