@@ -6,7 +6,7 @@ class CustomHeader extends HTMLElement {
             <div class="top-bar-mob-left">
             <button type="button" class="search-btn" data-bs-toggle="modal" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="images/search-black.svg" alt="search-icon"></button>
             <select class="lang-select" name="lang" id="lang">
-                <option value="English">Eng</option>
+                <option value="English">English</option>
                 <option value="marathi">मराठी</option>
                 <option value="hindi">हिन्दी</option>
             </select>
@@ -94,12 +94,12 @@ class CustomHeader extends HTMLElement {
                         </div>
                         <div class="col-md-6 top-link-search d-flex justify-content-start align-items-center">
                             <div class="top-bar-links me-4">
-                                <a href="#head_office">Go To Main Content</a>
-                                <a href="#" id="aMinus">A-</a>
-                                <a href="#" id="aReset">A</a>
-                                <a href="#" id="aPlus">A+</a>
-                                <select class="lang-select" name="lang" id="lang">
-                                    <option value="English">Eng</option>
+                                <a class="ms-1" href="#head_office">Go To Main Content</a>
+                                <a class="ms-1" href="#" id="aMinus">A-</a>
+                                <a class="ms-1" href="#" id="aReset">A</a>
+                                <a class="ms-1" href="#" id="aPlus">A+</a>
+                                <select class="lang-select ms-2" name="lang" id="lang">
+                                    <option value="English">English</option>
                                     <option value="marathi">मराठी</option>
                                     <option value="hindi">हिन्दी</option>
                                 </select>

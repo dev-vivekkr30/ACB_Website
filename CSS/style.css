@@ -214,9 +214,14 @@ a:hover{
 }
 
 .top-bar .lang-select{
-    border-color: var(--white-color);
-    border-radius: 4px;
-    height: 24px;
+    border: none;
+    border-radius: 24px;
+    color: var(--white-color);
+    background-color: transparent;
+}
+
+.top-bar .lang-select option{
+    color: var(--primary-color);
 }
 
 /* Navbar */
