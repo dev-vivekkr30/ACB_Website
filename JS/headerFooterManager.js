@@ -6,7 +6,7 @@ class CustomHeader extends HTMLElement {
             <div class="top-bar-mob-left">
             <button type="button" class="search-btn" data-bs-toggle="modal" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="images/search-black.svg" alt="search-icon"></button>
             <select class="lang-select" name="lang" id="lang">
-                <option value="English">Eng</option>
+                <option value="English">English</option>
                 <option value="marathi">मराठी</option>
                 <option value="hindi">हिन्दी</option>
             </select>

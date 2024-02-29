@@ -220,9 +220,8 @@ a:hover{
     background: transparent;
     border: none;
 }
-
 .top-bar .lang-select option{
-    color: var(--black-color);
+    color: var(--primary-color);
 }
 
 /* Navbar */
