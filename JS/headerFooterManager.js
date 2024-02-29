@@ -55,9 +55,6 @@ class CustomHeader extends HTMLElement {
                             <a class="nav-link" href="statistics.html">Statistics</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">DG′s Message</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link" href="#">About Us</a>
                         </li>
                         <li class="nav-item">
@@ -94,18 +91,18 @@ class CustomHeader extends HTMLElement {
                         </div>
                         <div class="col-md-6 top-link-search d-flex justify-content-start align-items-center">
                             <div class="top-bar-links me-4">
-                                <a class="ms-1" href="#head_office">Go To Main Content</a>
-                                <a class="ms-1" href="#" id="aMinus">A-</a>
-                                <a class="ms-1" href="#" id="aReset">A</a>
-                                <a class="ms-1" href="#" id="aPlus">A+</a>
-                                <select class="lang-select ms-2" name="lang" id="lang">
+                                <a href="#head_office">Go To Main Content</a>
+                                <a href="#" id="aMinus">A-</a>
+                                <a href="#" id="aReset">A</a>
+                                <a href="#" id="aPlus">A+</a>
+                                <select class="lang-select" name="lang" id="lang">
                                     <option value="English">English</option>
                                     <option value="marathi">मराठी</option>
                                     <option value="hindi">हिन्दी</option>
                                 </select>
                             </div>
                             <!-- Search Bar -->
-                            <div class="input-group mb-3">
+                            <div class="input-group">
                                 <input type="text" class="form-control top-search-bar" placeholder="Search here..."
                                     aria-label="Recipient's username" aria-describedby="button-addon2">
                                 <!-- <button class="btn search-btn default-btn" type="button" id="button-addon2"><img src="images/search.svg" alt="search_icon" srcset=""></button> -->
@@ -138,9 +135,6 @@ class CustomHeader extends HTMLElement {
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="statistics.html">Statistics</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">DG′s Message</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="#">About Us</a>
