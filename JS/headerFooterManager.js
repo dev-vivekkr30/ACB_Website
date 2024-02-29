@@ -55,9 +55,6 @@ class CustomHeader extends HTMLElement {
                             <a class="nav-link" href="statistics.html">Statistics</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">DG′s Message</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link" href="#">About Us</a>
                         </li>
                         <li class="nav-item">
@@ -99,13 +96,13 @@ class CustomHeader extends HTMLElement {
                                 <a href="#" id="aReset">A</a>
                                 <a href="#" id="aPlus">A+</a>
                                 <select class="lang-select" name="lang" id="lang">
-                                    <option value="English">Eng</option>
+                                    <option value="English">English</option>
                                     <option value="marathi">मराठी</option>
                                     <option value="hindi">हिन्दी</option>
                                 </select>
                             </div>
                             <!-- Search Bar -->
-                            <div class="input-group mb-3">
+                            <div class="input-group">
                                 <input type="text" class="form-control top-search-bar" placeholder="Search here..."
                                     aria-label="Recipient's username" aria-describedby="button-addon2">
                                 <!-- <button class="btn search-btn default-btn" type="button" id="button-addon2"><img src="images/search.svg" alt="search_icon" srcset=""></button> -->
@@ -138,9 +135,6 @@ class CustomHeader extends HTMLElement {
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="statistics.html">Statistics</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">DG′s Message</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="#">About Us</a>
