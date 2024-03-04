@@ -191,7 +191,7 @@ class CustomFooter extends HTMLElement {
                         <a href="">
                             <li class="footer-link">Legal</li>
                         </a>
-                        <a href="#">
+                        <a href="faq.html">
                             <li class="footer-link">FAQs</li>
                         </a>
                         <a href="#">

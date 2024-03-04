@@ -249,6 +249,19 @@
 
 @media only screen and (max-width:480px) {
 
+    .table tbody tr td {
+        padding: 6px 9px;
+        font-size: 14px;
+    }
+
+    .table thead tr th {
+        padding: 12px 9px;
+        font-size: 14px;
+    }
+    .show-row p{
+        font-size: 14px;
+    }
+
     .float-cta-btn {
         width:54px;
         height: 54px;
@@ -263,7 +276,7 @@
     }
 
     .contact-info-sidebar .sidebar-body-info .sidebar-text h2, .contact-info-sidebar .sidebar-title h2{
-        font-size: 18px;
+        font-size: 14px;
     }
 
     .float-cta-btn {
