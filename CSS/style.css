@@ -5,6 +5,10 @@
 :root {
     --primary-color: #004890;
     --secondary-color: #FF981F;
+    --neutral-color: #758391;
+    --neutral-color-90: #85919E;
+    --neutral-color-70: #A3ADB6;
+    --neutral-color-40: #DEE1E5;
     --gray-color: #C7C7C7;
     --black-color: #202020;
     --white-color: #FFFFFF;
@@ -18,7 +22,7 @@
 }
 
 body {
-    font-size: 14px;
+    font-size: 16px;
     font-family: var(--primary-font);
 }
 
@@ -38,23 +42,21 @@ body {
 /* Typography */
 
 h1 {
-    font-size: 28px;
-    font-family: var(--primary-font);
+    font-size: 40px;
     font-weight: bold;
     line-height: normal;
     color: var(--black-color);
 }
 
 h2 {
-    font-size: 24px;
-    font-family: var(--primary-font);
+    font-size: 36px;
     font-weight: bold;
     line-height: normal;
     color: var(--black-color);
 }
 
 h3 {
-    font-size: 18px;
+    font-size: 32px;
     font-family: var(--primary-font);
     font-weight: 500;
     line-height: normal;
@@ -62,20 +64,63 @@ h3 {
 }
 
 h4 {
-    font-size: 16px;
+    font-size: 28px;
     font-family: var(--primary-font);
     font-weight: 400;
     line-height: normal;
     color: var(--black-color);
 }
 
-p {
-    font-size: 14px;
-    font-family: var(--primary-font);
+h5 {
+    font-size: 24px;
     font-weight: 400;
     line-height: normal;
     color: var(--black-color);
 }
+
+h6 {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--black-color);
+}
+
+.large2{
+    font-size: 20px;
+    line-height: normal;
+    color: var(--black-color);
+}
+
+.large{
+    font-size: 18px;
+    line-height: normal;
+    color: var(--black-color);
+}
+
+p {
+    font-size: 16px;
+    line-height: normal;
+    color: var(--black-color);
+}
+
+.base{
+    font-size: 14px;
+    line-height: normal;
+    color: var(--black-color);
+}
+
+.small{
+    font-size: 12px;
+    line-height: normal;
+    color: var(--black-color);
+}
+
+.x-small{
+    font-size: 10px;
+    line-height: normal;
+    color: var(--black-color);
+}
+
 
 a {
     text-decoration: none;
@@ -94,18 +139,16 @@ a:hover{
 /* default-button & Secondary Button */
 
 .default-btn {
-    font-size: 14px;
-    line-height: 16px;
     font-weight: 500;
-    width: auto;
-    height: 46px;
+    width: 198px;
+    height: 48px;
     color: var(--white-color);
     background-color: var(--secondary-color);
-    padding: 13px 28px !important;
-    font-size: 14px;
+    padding: 16px !important;
     border: none;
     border-radius: 50px;
-    line-height: normal;
+    line-height: 16px;
+    text-align: center;
 }
 
 .default-btn:hover {
@@ -152,7 +195,7 @@ a:hover{
 }
 
 .wrapper {
-    padding: 52px 0px;
+    padding: 42px 0px;
 }
 
 /* Navigation-bar */
@@ -242,8 +285,7 @@ a:hover{
 }
 
 .top-navbar .navbar .navbar-nav .nav-item .nav-link {
-    color: var(--black-color);
-    font-size: 14px !important;
+    color: var(--neutral-color);
 }
 
 .top-navbar .navbar .navbar-nav .nav-item .active {
@@ -262,19 +304,23 @@ a:hover{
 
 }
 
-.top-bar-mob .top-bar-mob-left .search-btn{
-    border:none;
-    background: transparent;
-    margin: 0px 6px;
-    background-color: var(--white-color);
-    padding: 9px 16px;
-    border-radius: 4px;
+.top-bar-mob .top-bar-mob-right .search-btn{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #2B67A3;
+    border: 1px solid #6B95BF;
+    margin-right: 8px;
 }
 
 .top-bar-mob .top-bar-mob-left .lang-select{
-    border-color: var(--white-color);
-    border-radius: 4px;
-    height: 42px;
+    background-color: transparent;
+    color: var(--white-color);
+    border: none;
+}
+
+.top-bar-mob .top-bar-mob-left .lang-select option{
+    color: var(--black-color);
 }
 
 
@@ -366,7 +412,7 @@ a:hover{
 /* Headline Marquee */
 .headline {
     width: 100%;
-    height: 35px;
+    height: 50px;
     background-color: var(--primary-color);
 
 }
@@ -378,7 +424,7 @@ a:hover{
     padding: 0px 32px;
 }
 
-.headline .headline-title h3 {
+.headline .headline-title p {
     margin-bottom: 0;
     font-weight: 500;
     color: var(--white-color);
@@ -386,7 +432,6 @@ a:hover{
 
 .headline .headline-marquee p {
     color: var(--white-color);
-    font-size: 16px;
     margin-bottom: 0;
 }
 
@@ -395,8 +440,9 @@ a:hover{
 .cta-latest-section .cta-lists .card {
     background-color: #00ADF4;
     border: none;
-    border-radius: 24px;
-    padding: 18px;
+    border-radius: 16px;
+    padding: 16px;
+    height: 184px;
     color: var(--white-color);
     cursor: pointer;
 }
@@ -406,7 +452,7 @@ a:hover{
 }
 
 .cta-latest-section .cta-lists .row .col-md-6:nth-child(1) .card {
-    background-color: #00ADF4;
+    background-color: #004890;
 }
 
 .cta-latest-section .cta-lists .row .col-md-6:nth-child(2) .card {
@@ -421,17 +467,26 @@ a:hover{
     background-color: #F9C600;
 }
 
+.cta-latest-section .cta-lists .row .col-md-12 .card {
+    background-color: #00c3f9;
+    height: 140px;
+}
+
 .cta-latest-section .card .card-body .card-title {
     display: flex;
     justify-content: start;
 }
 
-.cta-latest-section .card .card-body .card-title .card-icon {
+/* .cta-latest-section .card .card-body .card-title .card-icon {
     display: block;
     border-radius: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
+} */
+
+.cta-latest-section .card .card-body .card-title .card-icon img{
+    max-width: 36px;
 }
 
 .cta-latest-section .card .card-body .card-title,
@@ -447,11 +502,11 @@ a:hover{
 
 .cta-latest-section .latest-update {
     width: 100%;
-    height: 702px;
+    height: 555px;
     overflow-x: hidden;
     overflow-y: auto;
-    background-color: #F1F1F1;
-    border-radius: 24px;
+    background-color: #F5F6F7;
+    border-radius: 16px;
     padding: 24px;
 }
 
@@ -487,7 +542,7 @@ a:hover{
 .dm-message {
     background-color: var(--primary-color);
     padding: 64px;
-    border-radius: 24px;
+    border-radius: 16px;
     position: relative;
 }
 
@@ -515,7 +570,7 @@ a:hover{
 /* Stattistc Section */
 
 .stats-section .card {
-    border-radius: 24px;
+    border-radius: 16px;
     padding: 8px;
 }
 
@@ -662,7 +717,7 @@ footer .footer-link-section ul {
 footer .footer-link-section .footer-link {
     color: var(--white-color);
     padding-bottom: 4px;
-    font-size: 12px;
+    font-size: 14px;
     list-style: none;
 }
 
@@ -728,16 +783,21 @@ footer .footer-copyright p {
 }
 
 /* File a complaint */
-
-.form-select,
-.form-control,
-#inputGroupFile02, .default-btn  {
-    font-size: 14px;
-    height: 46px;
+.form-label{
+    color: var(--neutral-color-90);
 }
 
-.complaint-form-section .form-control::placeholder {
+.form-control, .form-select,
+#inputGroupFile02{
     font-size: 14px;
+    height: 48px;
+    border-color: var(--neutral-color-40);
+    color: var(--black-color);
+}
+
+.form-select::placeholder {
+    font-size: 14px;
+    color: var(--neutral-color-70) !important;
 }
 
 .file-upload {

@@ -2,14 +2,13 @@ class CustomHeader extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
         <!-- Top Bar with Search and Menu Option for Mobile Only Starts-->
-        <div class="top-bar-mob d-flex justify-content-between align-items-center">
+        <div class="top-bar-mob">
             <div class="top-bar-mob-left">
-            <button type="button" class="search-btn" data-bs-toggle="modal" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="images/search-black.svg" alt="search-icon"></button>
-            <select class="lang-select" name="lang" id="lang">
-                <option value="English">English</option>
-                <option value="marathi">मराठी</option>
-                <option value="hindi">हिन्दी</option>
-            </select>
+                <select class="lang-select" name="lang" id="lang">
+                    <option value="English">English</option>
+                    <option value="marathi">मराठी</option>
+                    <option value="hindi">हिन्दी</option>
+                </select>
             </div>
 
             <!-- Modal -->
@@ -25,14 +24,17 @@ class CustomHeader extends HTMLElement {
                     </div>
                 </div>
             </div>
+            <!-- Modal Ends-->
 
+            
+            <div class="top-bar-mob-right d-flex justify-content-end align-items-center">
+                <button type="button" class="search-btn" data-bs-toggle="modal" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="images/search-white.svg" alt="search-icon"></button>
+                <button class="navbar-toggler fs-6" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                    aria-controls="offcanvasExample">Menu<span><img class="ms-2 navbar-toggler-icon" style="width:16px" src="images/menu-bars.svg" alt="menu-bar"
+                            srcset=""></span>
+                </button>            
+            </div>
 
-
-
-            <button class="navbar-toggler d-flex justify-content-between align-items-center fs-6 p-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
-                aria-controls="offcanvasExample">Menu<span><img class="ms-2 navbar-toggler-icon" style="width:16px" src="images/menu-bars.svg" alt="menu-bar"
-                        srcset=""></span>
-            </button>
 
             <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
                 aria-labelledby="offcanvasExampleLabel">
@@ -167,7 +169,7 @@ class CustomFooter extends HTMLElement {
         <div class="container">
             <div class="row footer-link-section mb-2">
                 <div class="col-md-2">
-                    <h3 class="link-title">QUICK LINKS</h3>
+                    <p class="link-title fw-bold">QUICK LINKS</p>
                     <ul>
                         <a href="rti.html">
                             <li class="footer-link">Right To Information</li>
@@ -184,7 +186,7 @@ class CustomFooter extends HTMLElement {
                     </ul>
                 </div>
                 <div class="col-md-2">
-                    <h3 class="link-title">FOR YOUR INFO</h3>
+                    <p class="link-title  fw-bold">FOR YOUR INFO</p>
                     <ul>
                         <a href="">
                             <li class="footer-link">Legal</li>
@@ -201,7 +203,7 @@ class CustomFooter extends HTMLElement {
                     </ul>
                 </div>
                 <div class="col-md-2">
-                    <h3 class="link-title">OTHER LINKS</h3>
+                    <p class="link-title  fw-bold">OTHER LINKS</p>
                     <ul>
                         <a href="">
                             <li class="footer-link">ACB Head Office</li>
@@ -215,7 +217,7 @@ class CustomFooter extends HTMLElement {
                     </ul>
                 </div>
                 <div class="col-md-2">
-                    <h3 class="link-title">RECOMMENDED</h3>
+                    <p class="link-title  fw-bold">RECOMMENDED</p>
                     <ul>
                         <a href="">
                             <li class="footer-link">Photo Gallery</li>
@@ -229,7 +231,7 @@ class CustomFooter extends HTMLElement {
                     </ul>
                 </div>
                 <div class="col-md-2">
-                    <h3 class="link-title">HOW TO REACH?</h3>
+                    <p class="link-title  fw-bold">HOW TO REACH?</p>
                     <ul>
                         <a href="">
                             <li class="footer-link">By Road</li>
@@ -243,7 +245,7 @@ class CustomFooter extends HTMLElement {
                     </ul>
                 </div>
                 <div class="col-md-2">
-                    <h3 class="link-title">CONTACT</h3>
+                    <p class="link-title  fw-bold">CONTACT</p>
                     <ul>
                         <a href="">
                             <li class="footer-link">+91 22-249-21212</li>
