@@ -51,7 +51,7 @@ class CustomHeader extends HTMLElement {
                             <a class="nav-link" href="press_release.html">Press Release</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Events</a>
+                            <a class="nav-link" href="events.html">Events</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="statistics.html">Statistics</a>
@@ -133,7 +133,7 @@ class CustomHeader extends HTMLElement {
                                         <a class="nav-link" href="press_release.html">Press Release</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Events</a>
+                                        <a class="nav-link" href="events.html">Events</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="statistics.html">Statistics</a>
@@ -174,10 +174,10 @@ class CustomFooter extends HTMLElement {
                         <a href="rti.html">
                             <li class="footer-link">Right To Information</li>
                         </a>
-                        <a href="#">
+                        <a href="tender.html">
                             <li class="footer-link">Tenders</li>
                         </a>
-                        <a href="#">
+                        <a href="circulars.html">
                             <li class="footer-link">Circulars</li>
                         </a>
                         <a href="#">
@@ -194,10 +194,10 @@ class CustomFooter extends HTMLElement {
                         <a href="faq.html">
                             <li class="footer-link">FAQs</li>
                         </a>
-                        <a href="#">
+                        <a href="feedback.html">
                             <li class="footer-link">Feedback</li>
                         </a>
-                        <a href="#">
+                        <a href="disclaimer.html">
                             <li class="footer-link">Disclaimer and Policies</li>
                         </a>
                     </ul>
@@ -205,13 +205,13 @@ class CustomFooter extends HTMLElement {
                 <div class="col-md-2">
                     <p class="link-title  fw-bold">OTHER LINKS</p>
                     <ul>
-                        <a href="">
+                        <a href="office-range-unit.html">
                             <li class="footer-link">ACB Head Office</li>
                         </a>
                         <a href="#">
                             <li class="footer-link">ACB Mobile App</li>
                         </a>
-                        <a href="#">
+                        <a href="important-link.html">
                             <li class="footer-link">Important Website Link</li>
                         </a>
                     </ul>
@@ -219,7 +219,7 @@ class CustomFooter extends HTMLElement {
                 <div class="col-md-2">
                     <p class="link-title  fw-bold">RECOMMENDED</p>
                     <ul>
-                        <a href="">
+                        <a href="gallery.html">
                             <li class="footer-link">Photo Gallery</li>
                         </a>
                         <a href="#">
@@ -233,13 +233,13 @@ class CustomFooter extends HTMLElement {
                 <div class="col-md-2">
                     <p class="link-title  fw-bold">HOW TO REACH?</p>
                     <ul>
-                        <a href="">
+                        <a href="reach-us.html">
                             <li class="footer-link">By Road</li>
                         </a>
-                        <a href="#">
+                        <a href="reach-us.html">
                             <li class="footer-link">By Air</li>
                         </a>
-                        <a href="#">
+                        <a href="reach-us.html">
                             <li class="footer-link">By Rail</li>
                         </a>
                     </ul>

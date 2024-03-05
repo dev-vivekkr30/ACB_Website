@@ -34,6 +34,10 @@
     .navbar .navbar-brand {
         width: 25%;
     }
+
+    .office-contact-card-section{
+        flex-wrap: wrap !important;
+    }
 }
 
 @media only screen and (max-width:1024px) {
@@ -419,6 +423,11 @@
 
     .secondary-btn-border{
         margin-top: 16px;
+    }
+
+
+    .disclaimer-content{
+        padding: 16px !important;
     }
     /* File Upload Btn */
 /* 
