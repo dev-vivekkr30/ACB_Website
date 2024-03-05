@@ -1083,7 +1083,7 @@ footer .footer-copyright p {
 .gallery-card .card-body .file-icon{
     height: 24px;
     width: 24px;
-    background-image: url('/images/folder-icon.svg');
+    background-image: url('../images/folder-icon.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1099,7 +1099,7 @@ footer .footer-copyright p {
 }
 
 .gallery-card:hover .card-body .file-icon{
-    background-image: url('/images/folder-icon-w.svg');
+    background-image: url('../images/folder-icon-w.svg');
 }
 
 /* Captcha Style */

@@ -121,11 +121,6 @@ function renderCaptcha() {
     captchaImage.dataset.captcha = captcha;
 }
 
-// Refresh Captcha
-function refreshCaptcha() {
-    renderCaptcha();
-    document.getElementById('validationMessage').innerText = ''; // Clear validation message
-}
 
 // Validate Captcha on form submission
 function submitForm() {
