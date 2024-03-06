@@ -426,7 +426,7 @@
     }
 
 
-    .disclaimer-content{
+    .disclaimer-content, .gallery-section, .event-section{
         padding: 16px !important;
     }
     /* File Upload Btn */
