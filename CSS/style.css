@@ -998,7 +998,7 @@ footer .footer-copyright p {
 
 .accordion-item{
     background-color: var(--white-color);
-    padding: 24px;
+    padding: 12px 24px;
     border: 1px solid var(--neutral-color-40);
     border-top: 1px solid var(--neutral-color-40) !important;
     border-radius: 16px !important;
