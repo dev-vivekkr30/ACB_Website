@@ -1022,11 +1022,11 @@ footer .footer-copyright p {
 }
 
 .accordion-button:not(.collapsed)::after {
-    background-image: url("/images/minus-btn.svg");
+    background-image: url("../images/minus-btn.svg");
   }
 
 .accordion-button::after{
-    background-image: url("/images/plus-btn.svg");
+    background-image: url("../images/plus-btn.svg");
     transition: all 0.5s;
 }
 
