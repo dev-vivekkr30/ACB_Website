@@ -157,12 +157,12 @@
     }
 
     .default-btn {
-        font-size: 16px;
+        font-size: 14px;
         padding: 8px 16px !important;
     }
 
     .top-navbar .navbar .navbar-nav .nav-item .nav-link {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .cta-lists,
@@ -199,11 +199,11 @@
     }
 
     .head-office-section .card .card-body h2 {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .head-office-section .card .card-body ul {
-        padding-left: 16px;
+        padding-left: 14px;
     }
 
     .head-office-section .card .card-body ul li {
@@ -400,7 +400,7 @@
     }
 
     footer .footer-link-section .link-title {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     footer .footer-address p,
