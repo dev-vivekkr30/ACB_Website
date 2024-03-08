@@ -144,3 +144,87 @@ function submitForm() {
 document.addEventListener('DOMContentLoaded', function () {
     renderCaptcha();
 });
+
+
+// Form validateForm_bribe_demand()
+
+function validateForm_bribe_demand() {
+  // Get the values of required fields
+  var name = document.getElementById('FormControlName');
+  var mobileNumber = document.getElementById('FormControlMobile');
+  var publicServantName = document.getElementById('FormControlPublicServantName');
+  var department = document.getElementById('FormControlDepartment');
+  var district = document.getElementById('FormControlDistrict');
+  var bribeDemand = document.getElementById('FormControlBribeDemand');
+  var pendingWork = document.getElementById('floatingTextarea');
+
+  // Create an array of required fields
+  var requiredFields = [name, mobileNumber, publicServantName, department, district, bribeDemand, pendingWork];
+
+  // Flag to track if all fields are filled
+  var allFieldsFilled = true;
+
+  // Check each field and highlight empty ones
+  requiredFields.forEach(function (field) {
+      if (field.value === '' || field.value === 'Select district*') {
+          field.classList.add('is-invalid'); // Add Bootstrap's is-invalid class for highlighting
+          allFieldsFilled = false;
+      } else {
+          field.classList.remove('is-invalid'); // Remove is-invalid class if the field is not empty
+      }
+  });
+
+  // If any field is empty, prevent the form submission
+  if (!allFieldsFilled) {
+      return false;
+  }
+
+  // If all required fields are filled, show the success modal
+  $('#thanksModal').modal('show');
+
+  return true;
+}
+
+// Attach the validation function to the form's onsubmit event
+document.getElementById('complaintForm').onsubmit = validateForm_bribe_demand;
+
+
+// Form validateForm_asset_complaint
+
+function validateForm_asset_complaint() {
+  // Get the values of required fields
+  var name = document.getElementById('FormControlName2');
+  var mobileNumber = document.getElementById('FormControlMobile2');
+  var publicServantName = document.getElementById('FormControlPublicServantName2');
+  var department = document.getElementById('FormControlDepartment2');
+  var district = document.getElementById('FormControlDistrict2');
+  var pendingWork = document.getElementById('floatingTextarea2');
+
+  // Create an array of required fields
+  var requiredFields = [name, mobileNumber, publicServantName, department, district, pendingWork];
+
+  // Flag to track if all fields are filled
+  var allFieldsFilled = true;
+
+  // Check each field and highlight empty ones
+  requiredFields.forEach(function (field) {
+      if (field.value === '' || field.value === 'Select district*') {
+          field.classList.add('is-invalid'); // Add Bootstrap's is-invalid class for highlighting
+          allFieldsFilled = false;
+      } else {
+          field.classList.remove('is-invalid'); // Remove is-invalid class if the field is not empty
+      }
+  });
+
+  // If any field is empty, prevent the form submission
+  if (!allFieldsFilled) {
+      return false;
+  }
+
+    // If all required fields are filled, show the success modal
+    $('#thanksModal').modal('show');
+    return true;
+}
+
+// Attach the validation function to the form's onsubmit event
+document.getElementById('complaintForm').onsubmit = validateForm_asset_complaint;

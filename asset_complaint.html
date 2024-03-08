@@ -44,11 +44,42 @@
                 <p>Register Your Complain Below</p>
             </div>
         </div>
+        <!-- Floating Buttons Starts-->
+
+        <div class="float-btn">
+            <a href="tel:9930997700">
+                <div class="float-cta-btn whatsapp-btn wow animate__animated animate__slideInRight">
+                    <img class="" src="images/whatsapp-btn.svg" alt="whatsapp-btn" srcset="">
+                    <span class="content">9930997700</span>
+                </div>
+            </a>
+            <a href="tel:+91 2224921212">
+                <div class="float-cta-btn call-btn wow animate__animated animate__slideInRight">
+                    <img class="" src="images/call-btn.svg" alt="whatsapp-btn" srcset="">
+                    <span class="content">+91 2224921212</span>
+                </div>
+            </a>
+            <a href="mailto:acbwebmail@mahapolice.gov.in">
+                <div class="float-cta-btn mail-btn wow animate__animated animate__slideInRight">
+                    <img class="" src="images/mail-btn.svg" alt="whatsapp-btn" srcset="">
+                    <span class="content">acbwebmail@mahapolice.gov.in</span>
+                </div>
+            </a>
+
+            <a href="bribe-demand-complaint.html">
+                <div class="float-cta-btn online-complaint wow animate__animated animate__slideInRight">
+                    <img class="" src="images/complaint-btn.svg" alt="whatsapp-btn" srcset="">
+                    <span class="content">Complaint Online</span>
+                </div>
+            </a>
+        </div>
+        <!-- Floating CTA Buttons ends -->
+
 
         <div class="container">
-            <div class="row">
-                <div class="col-md-8 p-4 wrapper complaint-form  wow animate__animated animate__fadeIn">
-                    <div class="row p-0">
+            <div class="row wrapper">
+                <div class="col-md-8 complaint-form  wow animate__animated animate__fadeIn">
+                    <div class="row p-0 mb-4">
                         <div class="col-md-4 mob-m-4">
                             <a href="bribe-demand-complaint.html" class="complaint-btn">Bribe Demand
                                 Complaint</a>
@@ -63,23 +94,25 @@
 
                     <div class="row">
                         <!-- Input Form Starts -->
-                        <div class="complaint-form-section wrapper">
+                        <div class="complaint-form-section">
 
                             <div class="mb-3">
                                 <p>Details Of the Complainant</p>
                                 <div class="row align-items-center">
                                     <div class="col-md-6">
                                         <div class="">
-                                            <label for="basic-url" class="form-label">Enter Your Name<span class="text-danger">*</span></label>
+                                            <label for="basic-url" class="form-label">Enter Your Name<span
+                                                    class="text-danger">*</span></label>
                                             <input type="text" class="form-control form-control-lg rounded-pill mob-m-4"
-                                                placeholder="Enter Name*" id="FormControlName" required>
+                                                placeholder="Enter Name*" id="FormControlName2" required>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="">
-                                            <label for="basic-url" class="form-label">Enter Your Mob. No.<span class="text-danger">*</span></label>
+                                            <label for="basic-url" class="form-label">Enter Your Mob. No.<span
+                                                    class="text-danger">*</span></label>
                                             <input type="number" class="form-control form-control-lg rounded-pill"
-                                                placeholder="10 Digit Mobile Number *" id="FormControlName" required>
+                                                placeholder="10 Digit Mobile Number *" id="FormControlMobile2" required>
                                         </div>
                                     </div>
                                 </div>
@@ -91,26 +124,31 @@
                                 <div class="row align-items-center mb-3">
                                     <div class="col-md-6">
                                         <div class="">
-                                            <label for="basic-url" class="form-label">Enter Name<span class="text-danger">*</span></label>
+                                            <label for="basic-url" class="form-label">Enter Name<span
+                                                    class="text-danger">*</span></label>
                                             <input type="text" class="form-control form-control-lg rounded-pill mob-m-4"
-                                                placeholder="Enter Name*" id="FormControlName" required>
+                                                placeholder="Enter Name*" id="FormControlPublicServantName2" required>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="">
-                                            <label for="basic-url" class="form-label">Department<span class="text-danger">*</span></label>
+                                            <label for="basic-url" class="form-label">Department<span
+                                                    class="text-danger">*</span></label>
                                             <input type="text" class="form-control form-control-lg rounded-pill"
-                                                placeholder="Department*" id="FormControlName" required>
+                                                placeholder="Department*" id="FormControlDepartment2" required>
                                         </div>
                                     </div>
                                     <div class="col-md-12 mt-3">
                                         <div>
-                                            <label for="basic-url" class="form-label">Information About Assets<span class="text-danger">*</span></label>
-                                            <div class="form-floating">                                              
+                                            <label for="basic-url" class="form-label">Information About Assets<span
+                                                    class="text-danger">*</span></label>
+                                            <div class="form-floating">
                                                 <textarea class="form-control rounded"
-                                                    placeholder="Enter information about the assets" id="floatingTextarea2"
-                                                    style="height: 100px; border-radius: 12px !important;" required></textarea>
-                                                
+                                                    placeholder="Enter information about the assets"
+                                                    id="floatingTextarea2"
+                                                    style="height: 100px; border-radius: 12px !important;"
+                                                    required></textarea>
+
                                             </div>
                                         </div>
                                     </div>
@@ -120,9 +158,10 @@
 
                                     <div class="col-md-12">
                                         <div class="mb-3">
-                                            <label for="basic-url" class="form-label">Select District<span class="text-danger">*</span></label>
+                                            <label for="basic-url" class="form-label">Select District<span
+                                                    class="text-danger">*</span></label>
                                             <select required class="form-select form-control-lg rounded-pill"
-                                                aria-label="Default select">
+                                                aria-label="Default select" id="FormControlDistrict2">
                                                 <option value="Thane" selected>Select district*</option>
                                                 <option value="Thane">Thane</option>
                                                 <option value="Navi Mumbai">Navi Mumbai</option>
@@ -172,7 +211,8 @@
                                     <div class="col-md-12">
                                         <div class="mb-3">
                                             <p>Attach evidence Video / Audio / Images</p>
-                                            <label for="basic-url" class="form-label">Upload<span class="text-danger">*</span></label>
+                                            <label for="basic-url" class="form-label">Upload<span
+                                                    class="text-danger">*</span></label>
                                             <div id="fileUploadContainer">
                                                 <div class="file-upload">
                                                     <div class="file-upload-btn"><input type="file" id="fileInput1"
@@ -183,7 +223,8 @@
                                                     <span id="fileName1" class="file-name"></span>
                                                 </div>
                                             </div>
-                                            <button class="btn add-more-btn" onclick="addFileInput()">+ Add More</button>
+                                            <button class="btn add-more-btn" onclick="addFileInput()">+ Add
+                                                More</button>
                                         </div>
 
                                     </div>
@@ -192,7 +233,9 @@
 
                             <div class="row align-items-center mt-4">
                                 <div class="col-md-6">
-                                    <button class="btn default-btn w-100 mb-3"><b>Submit Complaint</b></button>
+                                    <button onclick="validateForm_asset_complaint()" class="btn default-btn w-100 mb-3" data-bs-toggle="modal"
+                                        data-bs-toggle="modal" data-bs-target="#thanksModal"><b>Submit
+                                            Complaint</b></button>
                                 </div>
                                 <div class="col-md-6">
                                     <button class="btn reset-btn w-100 mb-3"><b>Reset</b></button>
@@ -201,10 +244,48 @@
 
                         </div>
 
+                        <!-- thanks Modal -->
+                        <div class="modal fade" id="thanksModal" tabindex="-1" aria-labelledby="thanksModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content" style="border-radius: 16px !important;">
+                                    <div class="modal-header" style="border: none;">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body text-center" style="padding-bottom: 42px;">
+                                        <span><img src="images/tick.svg" alt=""></span>
+                                        <h4 class="fw-bold">Thanks You!</h4>
+                                        <p>Our team will reach call you shortly.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- thanks Modal Ends-->
+
+                        <!-- wrong Modal -->
+                        <div class="modal fade" id="wrongModal" tabindex="-1" aria-labelledby="wrongModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content" style="border-radius: 16px !important;">
+                                    <div class="modal-header" style="border: none;">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body text-center" style="padding-bottom: 42px;">
+                                        <span><img src="images/wrong.svg" alt=""></span>
+                                        <h4 class="fw-bold">Something went wrong!</h4>
+                                        <p>Please try again later.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- wrong Modal Ends-->
+
                         <!-- Input Form Ends -->
                     </div>
                 </div>
-                <div class="col-md-4 p-4 contact-sidebar  wow animate__animated animate__fadeIn">
+                <div class="col-md-4 contact-sidebar  wow animate__animated animate__fadeIn">
                     <div class="p-4 contact-info-sidebar ">
                         <div class="sidebar-body pb-4 mb-4 d-flex justify-content-start align-items-start">
                             <img src="images/support-icon.svg" class="me-2" alt="" srcset="">
@@ -218,7 +299,8 @@
                             <img src="images/Call-icon-dark.svg" class="me-2" alt="" srcset="">
                             <div class="sidebar-text">
                                 <p>Telephone no.</p>
-                                <h2 class="large"><a href="tel:24954826">24954826</a>, <a href="tel:24921212">24921212</a></h2>
+                                <h2 class="large"><a href="tel:24954826">24954826</a>, <a
+                                        href="tel:24921212">24921212</a></h2>
                             </div>
                         </div>
 

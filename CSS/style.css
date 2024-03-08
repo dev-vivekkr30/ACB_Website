@@ -740,6 +740,7 @@ footer .footer-link-section .footer-link {
     padding-bottom: 4px;
     font-size: 14px;
     list-style: none;
+    word-wrap: break-word;
 }
 
 footer .footer-address p {
@@ -978,6 +979,7 @@ footer .footer-copyright p {
 }
 
 .contact-info-sidebar .sidebar-body-info{
+    word-break: break-all;
     margin-bottom: 14px;
 }
 
@@ -991,7 +993,7 @@ footer .footer-copyright p {
 }
 
 .contact-info-sidebar .sidebar-body-info .sidebar-text h2{
-    font-size: 18px;
+    font-size: 16px;
 }
 
 /* FAQ accordion */
@@ -1114,4 +1116,8 @@ footer .footer-copyright p {
 #captchaImage{
     background-color: var(--neutral-color-20);
     border-radius: 8px;
+}
+.modal.fade .modal-dialog {
+    transform: translateY(0%) !important;
+    transition: transform 0.5s ease-out;
 }
