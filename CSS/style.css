@@ -147,6 +147,7 @@ a:hover{
     background-color: var(--secondary-color);
     padding: 16px !important;
     border: none;
+    font-size: 14px;
     border-radius: 50px;
     line-height: 16px;
     text-align: center;
@@ -174,6 +175,7 @@ a:hover{
     background-color: transparent;
     width: 70px;
     height: 32px;
+    font-size: 14px;
     color: var(--black-color);
     border: 1px solid var(--black-color) !important;
     border-radius: 50px;
@@ -717,6 +719,9 @@ a:hover{
 footer {
     background-image: url('../images/footer-bg.jpg');
     overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 footer .footer-link-section .link-title {
@@ -816,6 +821,7 @@ footer .footer-copyright p {
 /* File a complaint */
 .form-label{
     color: var(--neutral-color-90);
+    margin-bottom: 4px !important;
 }
 
 .form-control, .form-select,
@@ -825,6 +831,11 @@ footer .footer-copyright p {
     border-color: var(--neutral-color-40);
     color: var(--black-color);
 }
+
+.highlight-border{
+    border-color: #e10000;
+}
+
 
 .form-select::placeholder {
     font-size: 14px;
@@ -1120,4 +1131,26 @@ footer .footer-copyright p {
 .modal.fade .modal-dialog {
     transform: translateY(0%) !important;
     transition: transform 0.5s ease-out;
+}
+
+.modal-content{
+    border-radius: 16px;
+}
+
+.modal-body{
+    padding: 74px;
+}
+
+.thanku-modal-btn{
+    position: absolute;
+    top: 12px;
+    right: 12px;
+}
+
+#validationMessage{
+    background-color: #F8D7DA;
+    color: #842029;
+    padding: 16px;
+    border-radius: 2px;
+    display: none;
 }

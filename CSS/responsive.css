@@ -47,10 +47,10 @@
         font-size: 12px;
     }
 
-    .default-btn {
+    /* .default-btn {
         font-size: 12px;
         padding: 12px 12px !important;
-    }
+    } */
 
     /* CTA Cards */
     /* .cta-latest-section .latest-update .update-list .update-link {
@@ -157,10 +157,10 @@
         top: 366px;
     }
 
-    .default-btn {
+    /* .default-btn {
         font-size: 14px;
         padding: 8px 16px !important;
-    }
+    } */
 
     .top-navbar .navbar .navbar-nav .nav-item .nav-link {
         font-size: 14px;
@@ -278,7 +278,7 @@
         width: 300px;
     }
 
-    .mob-m-4{
+    .mob-mb-4{
         margin-bottom: 1rem;
     }
 
@@ -446,4 +446,11 @@
     .fileUploadContainer .file-upload span{
         font-size: 12px; white-space: nowrap; width:220px; overflow: hidden; text-overflow: ellipsis;
     } */
+}
+
+@media only screen and (min-width:640px) and (max-width:768px) {
+
+    .mob-mb-4{
+        padding-bottom: 1rem;
+    }
 }

@@ -9,6 +9,7 @@
 
     <!-- Bootstrap-CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="CSS/style.css">
@@ -78,30 +79,31 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 p-4 wrapper complaint-form  wow animate__animated animate__fadeIn">
-                    <div class="row">
-                        <div class="col-md-4 mob-m-4">
+                    <div class="row p-0 mb-4">
+                        <div class="col-md-4 mob-mb-4">
                             <a href="bribe-demand-complaint.html" class="complaint-btn">Bribe Demand
                                 Complaint</a>
                         </div>
-                        <div class="col-md-5 mob-m-4"><a href="asset_complaint.html"
+                        <div class="col-md-5 mob-mb-4"><a href="asset_complaint.html"
                                 class="complaint-btn">Disproportionate Assets
                                 Complaint</a>
                         </div>
-                        <div class="col-md-3 mob-m-4"><a href="other_complaint.html" class="complaint-btn-active">Misuse of
+                        <div class="col-md-3 mob-mb-4"><a href="other_complaint.html" class="complaint-btn-active">Misuse of
                                 Power</a></div>
                     </div>
 
                     <div class="row">
                         <!-- Input Form Starts -->
-                        <div class="complaint-form-section wrapper">
-
+                        <div class="complaint-form-section">
+                            <div id="error-message" class="alert alert-danger"><i class="bi bi-exclamation-circle me-1"></i> Please fill out all required fields.</div>
+                            <form id="complaintForm">
                             <div class="mb-3">
                                 <p>Details Of the Complainant</p>
                                 <div class="row align-items-center">
                                     <div class="col-md-6">
                                         <div class="">
                                             <label for="basic-url" class="form-label">Enter Your Name<span class="text-danger">*</span></label>
-                                            <input type="text" class="form-control form-control-lg rounded-pill mob-m-4"
+                                            <input type="text" class="form-control form-control-lg rounded-pill mob-mb-4"
                                                 placeholder="Enter Name*" id="FormControlName" required>
                                         </div>
                                     </div>
@@ -205,15 +207,16 @@
 
                             <div class="row align-items-center mt-4">
                                 <div class="col-md-6">
-                                    <button class="btn default-btn w-100 mb-3" data-bs-toggle="modal"
+                                    <button class="btn default-btn w-100 mob-mb-4"
                                     data-bs-toggle="modal" data-bs-target="#thanksModal"><b>Submit Complaint</b></button>
                                 </div>
                                 <div class="col-md-6">
-                                    <button class="btn reset-btn w-100 mb-3"><b>Reset</b></button>
+                                    <button class="btn reset-btn w-100"><b>Reset</b></button>
                                 </div>
                             </div>
 
-                        </div>
+                            </form>
+    </div>
                         <!-- thanks Modal -->
                     <div class="modal fade" id="thanksModal" tabindex="-1" aria-labelledby="thanksModalLabel"
                     aria-hidden="true">
