@@ -17,6 +17,10 @@
         width: auto !important;
     }
 
+    .cta-latest-section .cta-lists .card .card-body .card-title {
+        font-size: 16px !important;
+    }
+
     /* Head Office & Branches */
     .head-office-section .row .col-md-3 .card {
         width: auto !important;
@@ -46,16 +50,6 @@
     .top-navbar .navbar .navbar-nav .nav-item .nav-link {
         font-size: 12px;
     }
-
-    /* .default-btn {
-        font-size: 12px;
-        padding: 12px 12px !important;
-    } */
-
-    /* CTA Cards */
-    /* .cta-latest-section .latest-update .update-list .update-link {
-        padding: 12px;
-    } */
 
     /* Dm's Message */
     .dm-message .message {

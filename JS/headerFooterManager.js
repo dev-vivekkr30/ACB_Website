@@ -82,13 +82,13 @@ class CustomHeader extends HTMLElement {
                         <div class="col-md-6 top-call-info d-flex justify-content-start align-items-center">
                             <!-- Tollfree -->
                             <div class="tollfree me-4 ms-4">
-                                <img src="images/call.svg" class="pe-2" alt="call" srcset="">Toll Free Number: <a
-                                    href="tel:1064">1064</a>
+                            <a href="tel:1064"> <img src="images/call.svg" class="pe-2" alt="call" srcset="">Toll Free Number: 1064</a>
                             </div>
                             <!-- Whatsapp -->
                             <div class="whatsapp">
+                            <a href="https://wa.me/9930997700" target="_blank" style="color:#fff;">
                                 <img src="images/whatsapp.svg" class="pe-2" alt="call" srcset="">WhatsApp Number:
-                                <strong>9930997700</strong>
+                                <strong>9930997700</strong></a>
                             </div>
                         </div>
                         <div class="col-md-6 top-link-search d-flex justify-content-start align-items-center">
